@@ -1,0 +1,1352 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+        <link rel="next" href="../2-variabler/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Datorer & programmering - Programmering 1</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datorer-och-programmering" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Programmering 1" class="md-header__button md-logo" aria-label="Programmering 1" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programmering 1
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Datorer & programmering
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Programmering 1" class="md-nav__button md-logo" aria-label="Programmering 1" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Programmering 1
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Datorer & programmering
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Datorer & programmering
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datorprogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datorprogram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hur-fungerar-en-dator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hur fungerar en dator?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hur fungerar en dator?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utdata
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Program
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompilering-interpretering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompilering &amp; Interpretering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompilering &amp; Interpretering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kompilerade-sprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompilerade språk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreterade-sprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreterade språk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lag-och-hognivasprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Låg- och högnivåspråk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Låg- och högnivåspråk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lagnivasprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lågnivåspråk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hognivasprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Högnivåspråk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vad-ar-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vad är C#?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-jamfort-med-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      C# jämfört med C/C++
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-integrated-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDE - Integrated Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-variabler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Variabler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-datatyper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Datatyper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-operatorer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Operatorer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-typkonvertering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typkonvertering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-slump/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slump(Random)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funktioner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 3
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funktioner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 4
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 4
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funktioner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 5
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 5
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funktioner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 6
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 6
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funktioner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modul 7
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Modul 7
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Funktioner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datorprogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datorprogram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hur-fungerar-en-dator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hur fungerar en dator?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hur fungerar en dator?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minne
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utdata
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Program
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kompilering-interpretering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompilering &amp; Interpretering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kompilering &amp; Interpretering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kompilerade-sprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompilerade språk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreterade-sprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreterade språk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lag-och-hognivasprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Låg- och högnivåspråk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Låg- och högnivåspråk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lagnivasprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lågnivåspråk
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hognivasprak" class="md-nav__link">
+    <span class="md-ellipsis">
+      Högnivåspråk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vad-ar-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vad är C#?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-jamfort-med-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      C# jämfört med C/C++
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-integrated-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDE - Integrated Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="datorer-och-programmering">Datorer och Programmering<a class="headerlink" href="#datorer-och-programmering" title="Permanent link">&para;</a></h1>
+<h2 id="datorprogram">Datorprogram<a class="headerlink" href="#datorprogram" title="Permanent link">&para;</a></h2>
+<p>När man talar om datorer, inkluderar detta inte bara vanliga persondatorer eller bärbara datorer, utan också mobiler och surfplattor. Datorer används även som komponenter i olika tekniska apparater såsom mikrovågsugnar, tvättmaskiner, leksaker, bilar, trafikljus, hissar och robotgräsklippare.</p>
+<p>Datorer är numera en självklar del av våra liv och för att dessa ska fungera behöver de programmeras av människor. Programmering handlar om att skriva instruktioner som en dator kan förstå och utföra. Instruktionerna kallas <strong>källkod</strong> (kod) eller program (datorprogram) och skrivs i ett programmeringsspråk.</p>
+<p>När ett program utförs (körs) i en dator säger man att programmet <strong>exekveras</strong>.</p>
+<h2 id="hur-fungerar-en-dator">Hur fungerar en dator?<a class="headerlink" href="#hur-fungerar-en-dator" title="Permanent link">&para;</a></h2>
+<p>Enkelt uttryckt är en dator en "maskin" som följer tydliga instruktioner och har till uppgift att: Ta in information (indata), behandla och lagra informationen samt presentera informationen igen (utdata).</p>
+<p>En dator kan egentligen bara en sak, nämligen skilja på två tillstånd, ström på och av. Dessa tillstånd brukar kallas för ettor och nollor. All information i en dator lagras som ettor och nollor.</p>
+<p>En dator kan förenklat ses som att den är uppbyggd av följande delar:
+<img alt="Alt-text" src="../img/dator.webp" /></p>
+<h3 id="indata">Indata<a class="headerlink" href="#indata" title="Permanent link">&para;</a></h3>
+<p>Att ge information till en dator kan ske med t.ex. tangentbord, mus eller mikrofon. En dator i en robotgräsklippare kan få information från olika sensorer som t.ex. känner av om något är i vägen.  </p>
+<h3 id="processor">Processor<a class="headerlink" href="#processor" title="Permanent link">&para;</a></h3>
+<p>Även känt som CPU (Central Processing Unit), datorns "hjärna", där alla instruktioner utförs, dvs där programmet körs (exekveras). Den kan hantera ett visst antal instruktioner. Olika datorer kan ha olika typer av processorer.  </p>
+<h3 id="minne">Minne<a class="headerlink" href="#minne" title="Permanent link">&para;</a></h3>
+<p>Programmet som ska köras läggs i datorns minne. Det är härifrån processorn hämtar instruktioner. Processorn kan även använda minnet för att lagra information medans programmet körs.  </p>
+<h3 id="utdata">Utdata<a class="headerlink" href="#utdata" title="Permanent link">&para;</a></h3>
+<p>Att visa information från en dator kan ske till t.ex. en skärm, högtalare eller skrivare. En dator i en robotgräsklippare kan ha t.ex. en lite skärm (display) eller blinkade lysdioder.  </p>
+<h2 id="program">Program<a class="headerlink" href="#program" title="Permanent link">&para;</a></h2>
+<p>Ett program är en följd av instruktioner, där varje instruktion representeras av ett antal ettor och nollor. Datorn är oerhört snabb på att skilja på dessa ettor och nollor, vilket möjliggör skapandet av olika typer av program.</p>
+<p>När ett program är skrivet som en serie av ettor och nollor kallas det för maskinkod. Ett program måste vara i maskinkod för att datorns hårdvara (t.ex. processor, minne) ska kunna förstå programmet och köra det. Maskinkoden ser olika ut beroende på vilken typ av processor datorn har och därför kan inte maskinkod flyttas till en dator med en annan processortyp. Ordet hårdvara (från engelskans hardware) är ett samlingsnamn för datorns fysiska delar, dvs alla de saker man kan ta på. </p>
+<p>Datorn förstår ju bara maskinkod (ettor och nollor), men det är ett språk som är svårt för oss människor. Därför har programmeringsspråk skapats som är enklare för oss människor att skriva och läsa, och som sedan kan översättas till maskinkod. </p>
+<p>Program som skrivs med hjälp av ett programmeringsspråk kallas för källkod. Ofta används det förkortade kod, när man menar källkod. </p>
+<h2 id="kompilering-interpretering">Kompilering &amp; Interpretering<a class="headerlink" href="#kompilering-interpretering" title="Permanent link">&para;</a></h2>
+<p>När man skriver källkod måste man använda ett specifikt programmeringsspråk och följa dess <strong>syntax</strong>, som är reglerna för hur koden ska skrivas. De flesta programmeringsspråk är på engelska.</p>
+<p>För att datorn ska kunna köra koden måste den översättas till maskinkod. Det finns två sätt att göra detta: kompilering och interpretering. Kompilerade språk översätter koden i förväg, medan interpreterade språk översätter den i realtid när programmet körs.</p>
+<h3 id="kompilerade-sprak">Kompilerade språk<a class="headerlink" href="#kompilerade-sprak" title="Permanent link">&para;</a></h3>
+<p>Exempel på kompilerade språk är C#, Java, C, C++ och Objective-C. Kompilatorn översätter koden till maskinkod innan den körs.</p>
+<p>Fördelar:</p>
+<ul>
+<li>Snabb exekvering.</li>
+<li>Tidiga upptäckter av syntaxfel.</li>
+</ul>
+<p>Nackdelar:</p>
+<ul>
+<li>Extra steg med kompilering.</li>
+<li>Krav på specifik processortyp.</li>
+</ul>
+<p>Kompilerade språk används när effektivitet och felsäkerhet är viktigt.</p>
+<h3 id="interpreterade-sprak">Interpreterade språk<a class="headerlink" href="#interpreterade-sprak" title="Permanent link">&para;</a></h3>
+<p>Exempel på interpreterade språk är Python, JavaScript, PHP och Ruby. Interpreteraren översätter och tolkar koden under exekvering.</p>
+<p>Fördelar:</p>
+<ul>
+<li>Portabilitet.</li>
+<li>Ingen kompileringsprocess.</li>
+</ul>
+<p>Nackdelar:</p>
+<ul>
+<li>Långsammare exekvering.</li>
+<li>Risk för syntaxfel vid körning.</li>
+</ul>
+<h2 id="lag-och-hognivasprak">Låg- och högnivåspråk<a class="headerlink" href="#lag-och-hognivasprak" title="Permanent link">&para;</a></h2>
+<p>Det finns många olika programmeringsspråk att välja mellan, som till exempel Python, C#, C++, Java, Javascript och C. </p>
+<p>Varje språk har sina egna fördelar och är bra på olika saker. Till exempel är C ofta användbart för att styra maskiner och apparater, medan Java är känt för att vara bra för att skapa stora datorprogram. När det gäller spelutveckling är C++ ett populärt val, medan C# används för att utveckla olika typer av applikationer och spel, och HTML, CSS och Javascript ofta används för att skapa webbsidor på nätet.</p>
+<h3 id="lagnivasprak">Lågnivåspråk<a class="headerlink" href="#lagnivasprak" title="Permanent link">&para;</a></h3>
+<p>Historiskt sett när datorer programmerades användes lågnivåspråk, där koden var mycket detaljerad och väldigt nära det språk som datorn pratar (maskinkod). Det krävde exakt specificerade instruktioner, vilket gav full kontroll över programmet. Lågnivåspråk används idag främst för små inbyggda system, exempelvis mikrovågsugnar. Exempel på lågnivåspråk är assembler.</p>
+<h3 id="hognivasprak">Högnivåspråk<a class="headerlink" href="#hognivasprak" title="Permanent link">&para;</a></h3>
+<p>Nästa steg i utvecklingen var mer avancerade programmeringsspråk, s.k. högnivåspråk. I dessa skrivs programmet på ett sätt som är lättare att förstå för människor.  I högnivåspråk fokuserar man på att beskriva vad som ska göras istället för exakt hur det ska göras.  Högnivåspråk måste konverteras till maskinkod med hjälp av en interpretator eller kompilator, beroende på vilket programmeringsspråk som används. Det är kompilatorn eller interpretatorn som styr hur koden utförs på detaljnivå.</p>
+<p>De vanligaste språken har fler likheter än olikheter, och alla innehåller instruktioner för:</p>
+<ul>
+<li>Sekvens - Instruktioner som sker i tur och ordning.</li>
+<li>Villkor - Styr vilka instruktioner som ska utföras.</li>
+<li>Repetition - Upprepning av instruktioner.</li>
+</ul>
+<h2 id="vad-ar-c">Vad är C#?<a class="headerlink" href="#vad-ar-c" title="Permanent link">&para;</a></h2>
+<p>C# (uttalas "C sharp") är ett programmeringsspråk som utvecklats av Microsoft och introducerades år 2000.</p>
+<p>C# skapades med målet att vara ett modernt, kraftfullt och lättanvänt språk för att utveckla olika typer av program och applikationer för Microsoft-plattformar som Windows. Men med tiden har språket blivit alltmer plattformsoberoende och numer kan man skriva och köra sina program på olika operativsystem som Windows, Linux och macOS. </p>
+<p>Ett av de mest intressanta dragen med C# är dess nära koppling till Microsofts .NET-plattform. Detta betyder att C#-program kan dra nytta av .NET:s stora ekosystem av bibliotek och verktyg för att snabbt och effektivt bygga robusta och skalbara applikationer.</p>
+<p>C# har blivit ett populärt programmeringsspråk tack vare dess användarvänlighet, kraftfulla funktioner och breda användningsområden, vilket inkluderar allt från desktopapplikationer till webbutveckling och spelprogrammering. För nybörjare är C# ett utmärkt val för att lära sig grunderna i programmering samtidigt som det erbjuder tillräckligt med funktionalitet för att hantera mer avancerade projekt.</p>
+<h2 id="c-jamfort-med-cc">C# jämfört med C/C++<a class="headerlink" href="#c-jamfort-med-cc" title="Permanent link">&para;</a></h2>
+<p>C# är ett högnivåspråk med moderna funktioner och starkt stöd för objektorienterad programmering, vilket gör det enklare att utveckla och underhålla program jämfört med C och C++. Medan C och C++ är närmare knutna till datorns hårdvara och erbjuder mer direkt kontroll, ger C# en högre abstraktionsnivå och plattformsoberoende genom Microsofts .NET-plattform.</p>
+<h2 id="ide-integrated-development-environment">IDE - Integrated Development Environment<a class="headerlink" href="#ide-integrated-development-environment" title="Permanent link">&para;</a></h2>
+<p>Även känt som <em>"programmet som man skriver kod i."</em></p>
+<p>En IDE, eller Integrated Development Environment, är en programvara som erbjuder utvecklare en komplett miljö för att skriva, testa, felsöka och distribuera program. Den kombinerar vanligtvis textredigerare med andra funktioner såsom kodkomplettering och felsökning.</p>
+<p>Vi kommer att använda Visual Studio Community Edition för att skriva och utveckla C#-program. Visual Studio är en kraftfull och populär IDE utvecklad av Microsoft och erbjuder ett brett utbud av funktioner och verktyg som underlättar utvecklingsprocessen. Community Edition är gratis för studenter och enskilda utvecklare.</p>
+<p>Förutom Visual Studio finns det också andra populära IDE:er såsom Rider och Visual Studio Code. Utöver detta kan man också hitta webbaserade IDE:er online, exempelvis Replit. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

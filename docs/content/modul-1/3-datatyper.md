@@ -9,16 +9,17 @@ Primitiva datatyper är de grundläggande datatyperna som används för att lagr
 
 Tabellen nedan tar upp vanligt förekommande primitiva datatyper i C#.
 
-| Datatyp | Beskrivning               | Storlek        | Intervall                                                    |     |
-| ------- | ------------------------- | -------------- | ------------------------------------------------------------ | --- |
-| int     | Heltal                    | 32 bits        | $-2{^3}{^1}$ till $2{^3}{^1}-1$                              |     |
-| long    | Heltal                    | 64 bits        | $-2{^6}{^3}$ till $2{^6}{^3}-1$                              |     |
-| float   | Flyttal                   | 32 bits        | $-3,4\cdot10{^3}{^8}$ till $3,4\cdot10{^3}{^8}$              |     |
-| double  | Flyttal, dubbel precision | 64 bits        | $\pm5,0\cdot10{^3}{^2}{^4}$ till $\pm1,7\cdot10{^3}{^0}{^8}$ |     |
-| decimal | Flyttal, hög precision    | 128 bits       | 28 gällande siffror                                          |     |
-| string  | Sekvens av tecken         | 16 bits/tecken | Ej applicerbart                                              |     |
-| char    | Enskilt tecken            | 16 bits        | Ett enskilt tecken                                           |     |
-| bool    | Boolean                   | 8 bits         | Sant eller falskt                                            |     |
+| Datatyp | Beskrivning               | Storlek        | Intervall                                           |
+|---------|---------------------------|----------------|-----------------------------------------------------|
+| int     | Heltal                    | 32 bits        | −2³¹ till 2³¹−1                                     |
+| long    | Heltal                    | 64 bits        | −2⁶³ till 2⁶³−1                                     |
+| float   | Flyttal                   | 32 bits        | −3,4·10³⁸ till 3,4·10³⁸                             |
+| double  | Flyttal, dubbel precision | 64 bits        | ±5,0·10³²⁴ till ±1,7·10³⁰⁸                          |
+| decimal | Flyttal, hög precision    | 128 bits       | 28 gällande siffror                                 |
+| string  | Sekvens av tecken         | 16 bits/tecken | Ej applicerbart                                     |
+| char    | Enskilt tecken            | 16 bits        | Ett enskilt tecken                                  |
+| bool    | Boolean                   | 8 bits         | Sant eller falskt                                   |
+
 
 <hr>
 
