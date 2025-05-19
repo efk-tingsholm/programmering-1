@@ -15,7 +15,10 @@ nav:                           # Navigation i sidomenyn
       - Datatyper: content/modul-1/3-datatyper.md
       - Operatorer: content/modul-1/4-operatorer.md
       - Typkonvertering: content/modul-1/5-typkonvertering.md
-      - Slump(Random): content/modul-1/6-slump.md
+      - Slumptal: content/modul-1/6-slump.md
+      - Begrepp: content/modul-1/begrepp1.md
+      - Övningsuppgifter: content/modul-1/uppg1.md
+      - Lösningsförslag: content/modul-1/lösn1.md
   - Modul 2:
       - Funktioner: error.md
   - Modul 3:
