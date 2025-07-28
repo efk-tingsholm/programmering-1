@@ -30,7 +30,15 @@ nav:                           # Navigation i sidomenyn
       - Lösningar: content/modul-2/lösn2.md
 
   - Modul 3:
-      - Temp: error.md
+      - Repetitionssatser: content/modul-3/1-repetitionssatser.md
+      - Strängarhantering och formatering: content/modul-3/2-strängar-format.md
+      - Filhantering: content/modul-3/3-filhantering.md
+      - Algoritmer, pseudokod & aktivitetsdiagram: content/modul-3/4-alg-pseudo-aktdiag.md
+      - Begrepp: content/modul-3/begrepp3.md
+      - Uppgifter: content/modul-3/uppg3.md
+      - Lösningar: content/modul-3/lösn3.md
+
+
   - Modul 4:
       - Temp: error.md 
   - Modul 5:
