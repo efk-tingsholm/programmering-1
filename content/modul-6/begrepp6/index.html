@@ -69,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#begrepp-modul-6" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1341,6 +1346,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Begrepp
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1353,6 +1373,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#allmant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allmänt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konstruktorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konstruktorer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1497,6 +1563,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#allmant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allmänt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konstruktorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konstruktorer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1512,9 +1615,32 @@
 
 
 
-  <h1>Begrepp</h1>
-
-
+<h1 id="begrepp-modul-6">Begrepp - Modul 6<a class="headerlink" href="#begrepp-modul-6" title="Permanent link">&para;</a></h1>
+<h2 id="allmant">Allmänt<a class="headerlink" href="#allmant" title="Permanent link">&para;</a></h2>
+<p><strong>Klass:</strong> En mall som definierar vilka egenskaper och metoder ett objekt ska ha.</p>
+<p><strong>Objekt:</strong> En instans av en klass som har egna unika egenskaper och kan utföra handlingar definierade i klassen.</p>
+<p><strong>Instans:</strong> En konkret representation av en klass som skapats med <code>new</code>.</p>
+<h2 id="konstruktorer">Konstruktorer<a class="headerlink" href="#konstruktorer" title="Permanent link">&para;</a></h2>
+<p><strong>Konstruktor:</strong> En metod i en klass som anropas automatiskt vid skapandet av ett objekt och används för att sätta startvärden.</p>
+<p><strong>Standardkonstruktor:</strong> En konstruktor utan parametrar som skapas automatiskt om ingen definieras.</p>
+<p><strong>Konstruktoröverlagring:</strong> Att en klass kan ha flera konstruktorer med olika parametrar för att möjliggöra olika sätt att skapa objekt.</p>
+<p><strong>Inkapsling:</strong> Principen att skydda data genom att begränsa direkt åtkomst och istället exponera kontrollerade metoder.</p>
+<p><strong>Klassmedlemmar:</strong> De variabler (fält) och metoder som ingår i en klass.</p>
+<p><strong>Fält (Field):</strong> En variabel som lagrar data inom en klass.</p>
+<p><strong><code>private</code>:</strong> Begränsar åtkomst till endast inom den egna klassen.</p>
+<p><strong><code>public</code>:</strong> Tillåter att variabler och metoder kan nås utanför klassen.</p>
+<p><strong><code>static</code>:</strong> Betyder att en variabel eller metod tillhör klassen snarare än enskilda objekt.</p>
+<p><strong><code>this</code>:</strong> Refererar till det aktuella objektet och används för att skilja på klassens fält och parametrar med samma namn.</p>
+<p><strong><code>private set;</code>:</strong> Gör att en property endast kan sättas inuti klassen.</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<p><strong>Property:</strong> En metodliknande mekanism som används för att kontrollera åtkomst till privata fält.</p>
+<p><strong><code>get</code>:</strong> Används för att läsa värdet av en property.</p>
+<p><strong><code>set</code>:</strong> Används för att ändra värdet av en property, ofta med validering.</p>
+<p><strong>Auto-Property:</strong> En kortare syntax där C# automatiskt skapar ett privat fält i bakgrunden.</p>
+<p><strong>Read-Only Property:</strong> En property med endast <code>get</code>, vilket gör att värdet kan sättas en gång men inte ändras.</p>
+<p><strong>Write-Only Property:</strong> En property med endast <code>set</code>, vilket gör att värdet kan sättas men inte läsas.</p>
+<p><strong>Statiska klasser:</strong> Klasser som inte kan instansieras och endast innehåller statiska medlemmar.</p>
+<p><strong>Statiska medlemmar:</strong> Variabler eller metoder som delas mellan alla instanser av en klass istället för att vara unika för varje objekt.</p>
 
 
 

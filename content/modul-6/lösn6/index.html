@@ -69,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#losningsforslag-modul-6" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1387,6 +1392,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lösningar
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1399,6 +1419,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-1-skapa-och-anvanda-objekt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 1: Skapa och använda objekt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-2-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 2: Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-3-metoder-och-inkapsling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 3: Metoder och inkapsling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-4-statisk-medlem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 4: Statisk medlem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-5-konstruktoroverlagring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 5: Konstruktoröverlagring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-6-kedjade-konstruktorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 6: Kedjade konstruktorer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1497,6 +1590,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-1-skapa-och-anvanda-objekt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 1: Skapa och använda objekt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-2-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 2: Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-3-metoder-och-inkapsling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 3: Metoder och inkapsling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-4-statisk-medlem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 4: Statisk medlem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-5-konstruktoroverlagring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 5: Konstruktoröverlagring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uppgift-6-kedjade-konstruktorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uppgift 6: Kedjade konstruktorer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1512,9 +1669,206 @@
 
 
 
-  <h1>Lösningar</h1>
+<h1 id="losningsforslag-modul-6">Lösningsförslag - Modul 6<a class="headerlink" href="#losningsforslag-modul-6" title="Permanent link">&para;</a></h1>
+<h2 id="uppgift-1-skapa-och-anvanda-objekt">Uppgift 1: Skapa och använda objekt<a class="headerlink" href="#uppgift-1-skapa-och-anvanda-objekt" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Person</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">namn</span><span class="p">;</span><span class="w"> </span><span class="c1">// Privat fält för att lagra personens namn</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ålder</span><span class="p">;</span><span class="w"> </span><span class="c1">// Privat fält för att lagra personens ålder</span>
 
+<span class="w">    </span><span class="c1">// Metod för att sätta personens namn</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SetNamn</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">nyttNamn</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">namn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nyttNamn</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 
+<span class="w">    </span><span class="c1">// Metod för att sätta personens ålder (måste vara positivt)</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">SetÅlder</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">nyÅlder</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nyÅlder</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">            </span><span class="n">ålder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nyÅlder</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Metod för att hämta personens namn</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">GetNamn</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">namn</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Metod för att hämta personens ålder</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">GetÅlder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">ålder</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Person</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Person</span><span class="p">();</span>
+<span class="w">        </span><span class="n">p</span><span class="p">.</span><span class="n">SetNamn</span><span class="p">(</span><span class="s">&quot;Anna&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">p</span><span class="p">.</span><span class="n">SetÅlder</span><span class="p">(</span><span class="mi">25</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Namn: {p.GetNamn()}, Ålder: {p.GetÅlder()}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="uppgift-2-properties">Uppgift 2: Properties<a class="headerlink" href="#uppgift-2-properties" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span><span class="c1">// Privat fält för att lagra bilens hastighet</span>
+
+<span class="w">    </span><span class="c1">// Property för att läsa och sätta bilens hastighet, med validering</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">get</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">set</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">value</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">                </span><span class="n">hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Bil</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bil</span><span class="p">();</span>
+<span class="w">        </span><span class="n">b</span><span class="p">.</span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hastighet: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">Hastighet</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="uppgift-3-metoder-och-inkapsling">Uppgift 3: Metoder och inkapsling<a class="headerlink" href="#uppgift-3-metoder-och-inkapsling" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bankkonto</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Metod för att sätta in pengar på kontot</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Insättning</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">belopp</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">belopp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">            </span><span class="n">saldo</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">belopp</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Metod för att ta ut pengar från kontot, men inte mer än saldot</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Uttag</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">belopp</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">belopp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">belopp</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">saldo</span><span class="p">)</span>
+<span class="w">            </span><span class="n">saldo</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">belopp</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Metod för att hämta aktuellt saldo</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">GetSaldo</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">saldo</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Bankkonto</span><span class="w"> </span><span class="n">konto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bankkonto</span><span class="p">();</span>
+<span class="w">        </span><span class="n">konto</span><span class="p">.</span><span class="n">Insättning</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">        </span><span class="n">konto</span><span class="p">.</span><span class="n">Uttag</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Saldo: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">konto</span><span class="p">.</span><span class="n">GetSaldo</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="uppgift-4-statisk-medlem">Uppgift 4: Statisk medlem<a class="headerlink" href="#uppgift-4-statisk-medlem" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">antalBilar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">modell</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">modell</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="n">modell</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">modell</span><span class="p">;</span>
+<span class="w">        </span><span class="n">antalBilar</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">AntalBilar</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">antalBilar</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Bil</span><span class="w"> </span><span class="n">b1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bil</span><span class="p">(</span><span class="s">&quot;Volvo&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Bil</span><span class="w"> </span><span class="n">b2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bil</span><span class="p">(</span><span class="s">&quot;BMW&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Antal bilar skapade: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Bil</span><span class="p">.</span><span class="n">AntalBilar</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="uppgift-5-konstruktoroverlagring">Uppgift 5: Konstruktoröverlagring<a class="headerlink" href="#uppgift-5-konstruktoroverlagring" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// Klass som representerar en produkt</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Produkt</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Namn</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Pris</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// Standardkonstruktor som sätter standardvärden</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Produkt</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Namn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Okänd&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Pris</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Konstruktor som tar emot namn och pris som parametrar</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Produkt</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">namn</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">pris</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Namn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">namn</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Pris</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pris</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Produkt</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Produkt</span><span class="p">();</span>
+<span class="w">        </span><span class="n">Produkt</span><span class="w"> </span><span class="n">p2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Produkt</span><span class="p">(</span><span class="s">&quot;Dator&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">12000</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Produkt: {p1.Namn}, Pris: {p1.Pris}&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Produkt: {p2.Namn}, Pris: {p2.Pris}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="uppgift-6-kedjade-konstruktorer">Uppgift 6: Kedjade konstruktorer<a class="headerlink" href="#uppgift-6-kedjade-konstruktorer" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Lampa</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Färg</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Ljusstyrka</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// Standardkonstruktor som sätter standardvärden</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Lampa</span><span class="p">()</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">(</span><span class="s">&quot;Vit&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Konstruktor som endast tar emot färg och använder standard ljusstyrka</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Lampa</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">färg</span><span class="p">)</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">(</span><span class="n">färg</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Konstruktor som tar emot både färg och ljusstyrka, tilldelar via autoproperty</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Lampa</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">färg</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ljusstyrka</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Färg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">färg</span><span class="p">;</span>
+<span class="w">        </span><span class="n">Ljusstyrka</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ljusstyrka</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Lampa</span><span class="w"> </span><span class="n">l1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Lampa</span><span class="p">();</span>
+<span class="w">        </span><span class="n">Lampa</span><span class="w"> </span><span class="n">l2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Lampa</span><span class="p">(</span><span class="s">&quot;Blå&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Lampa 1 - Färg: {l1.Färg}, Ljusstyrka: {l1.Ljusstyrka}&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Lampa 2 - Färg: {l2.Färg}, Ljusstyrka: {l2.Ljusstyrka}&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
