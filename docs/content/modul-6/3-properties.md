@@ -7,7 +7,7 @@ Tidigare har vi använt metoder för att hämta och sätta värden. Där man må
 
 En **property** (egenskap) är en mekanism i C# för att hantera åtkomst till en privat variabel i en klass. Properties används för att kontrollera hur data läses och skrivs, vilket är en viktig del av **inkapsling** i objektorienterad programmering.
 
-En property består av en **getter** och en **setter**:
+En property består av en **getter** och en **setter**, motsvaras av kodblocken `get` och `set` i nedanstående exempel, där namnen är beskrivande, och `get` då hanterar om värdet ska hämtas (och sen förmodligen användas till något), medan `set` hanterar om värdet ska ändras.
 ```csharp
 class Bil
 {
@@ -17,15 +17,25 @@ class Bil
     // Property
     public int Hastighet 
     {
+        // När värdet från fältet "hastighet" ska hämtas och sen användas till något.
         get { return hastighet; }
+
+        // När annan del av programmet försöker ändra värdet i "hastighet".
         set 
         {
-            if (value > 0) // Validering av värdet
+            // Validering av det inkommande värdet, ändra bara om det är större ön noll.
+            if (value > 0) 
+            {
+                // Tilldelar det privata fältet "hastighet" det nya inkommande värdet.
                 hastighet = value;
+            }
         }
     }
 }
 ```
+
+Properties bör namnges enligt den privata variabel som hanteras, men med inledande versal. Exempelvis för ovanstående kod, där det privata fältet `hastighet` hanteras av propertyn `Hastighet`.
+
 Det finns fördelar med properties, exempelvis: 
 
 - **Kortare och mer läsbar kod** – eliminerar behovet av separata getter- och setter-metoder.
@@ -36,24 +46,23 @@ Det finns fördelar med properties, exempelvis:
     Ja, jag förstår att att det inte är mer läsbart första gången man ser det... 
 
 
-### Exempel på hur en Property används i `Main()`
-När en property har definierats kan den användas direkt i `Main()` för att sätta och läsa värden:
+### Användning
+När en property har definierats kan den användas direkt i `Main()` för att sätta och läsa värden direkt via objektet.
 ```csharp
 class Program
 {
     static void Main()
     {
         Bil minBil = new Bil();
-        minBil.Hastighet = 100; // Använder propertyn för att sätta värdet
-        Console.WriteLine("Bilens hastighet: " + minBil.Hastighet); // Läser värdet
+
+        // Använder propertyn för att sätta värdet
+        minBil.Hastighet = 100; 
+
+        // Skriver ut bilens hastighet med hjälp av propertyn
+        Console.WriteLine("Bilens hastighet: " + minBil.Hastighet); 
     }
 }
 ```
-Man använder propertyn som en vanlig variabel, men med **validering** inbyggd!
-
-!!! tip "Namngivning"
-    En property bör alltid ha **stor bokstav i början** och motsvara namnet på det privata fältet.
-
 
 ---
 
@@ -66,22 +75,21 @@ class Bil
 }
 ```
 
-C# skapar automatiskt ett **privat fält i bakgrunden**, så att vi slipper skriva ut det manuellt.
+C# skapar automatiskt ett privat fält i bakgrunden, så att vi slipper skriva ut det manuellt.
 
-> [!tip] **När ska auto-properties användas?**
-> Om ingen validering behövs, är auto-properties ett bättre alternativ än att skapa ett privat fält + full property.
+!!! warning "Auto-property eller inte?"
+    Om ingen validering behövs, är auto-properties ett smidigt alternativ till att skapa ett privat fält + full property.
+
+    Fundera på om det i mitt ovanstående exempel är lämpligt med en auto-property eller inte...
+
 
 ---
 
 ## Anropa Properties i Konstruktorn
-För att skydda data med validering bör propertyn alltid användas i konstruktorn istället för att sätta fältet direkt. 
+Man kan skriva in validering i konstruktorn, som demonstrerats i föregående avsnitt. Man kan också skriva in validering i sina properties som demonstrerats här ovan. 
 
-- Det säkerställer att valideringen från `set`-blocket återanvänds.
-- Dubbel kod undviks och objektet skapas korrekt från början.
+Men om man ändå använder properties med validering behöver man inte göra dubbelt jobb och skriva valideringen i konstruktorn också - man kan använda propertyn inne i konstruktorn istället, för propertyn har redan valideringen. 
 
-Genom att använda propertyn i konstruktorn säkerställs att valideringen används korrekt.
-
-**Exempel – använder propertyn i konstruktorn**:
 ```csharp
 class Bil
 {
@@ -102,50 +110,55 @@ class Bil
 	// Konstruktorn, tar inkommande värde och tilldelar till property
     public Bil(int hastighetIn)
     {
-        Hastighet = hastighetIn; // Använder propertyn för att säkerställa validering
+        // Använder propertyn "Hastighet" för att säkerställa validering, 
+        // istället för att tilldela till fältet "hastighet" direkt.
+        Hastighet = hastighetIn; 
     }
 }
 ```
 
 
-> [!summary] **Sammanfattning**
-> - Använd alltid propertyn i konstruktorn, inte det privata fältet.
-> - Detta säkerställer att eventuell validering används konsekvent.
 
 ---
 
 ## Properties utan både Get och Set
 En property behöver inte alltid ha både `get` och `set`. 
 
-### 1. Read-Only Properties (endast `get`)
-Om ett värde **aldrig ska ändras** utanför klassen, kan vi ha en property med **bara `get`**:
+### 1. Read-Only Properties
+Om ett värde **aldrig ska ändras** utanför klassen, kan man ha en property med bara `get`:
 ```csharp
 class Bil
 {
-    public string Färg { get; } // Auto-property med endast 'get', kan bara sättas i konstruktorn 
+    // Auto-property med endast 'get', resten av programmet 
+    // kan enbart hämta värdet
+    public string Färg { get; } 
 
+    // Konstruktor, 
     public Bil(string färg)
     {
-                Färg = färg; // Propertyn kan endast sättas vid objektets skapande
+        // Vi låter konstruktorn vara enda tillfället då färgen kan tilldelas
+        Färg = färg; 
     }
 }
 ```
-**Används för:** ID:n, skapelsedatum, konstanta värden per objekt.
+Kan vara användbart för exempelvis unika ID:n och datum då objekt skapats.
 
-### 2. Write-Only Properties (endast `set`)
-Om en property bara ska **kunna ta emot värden men inte läsas ut**, kan vi använda **bara `set`**:
+### 2. Write-Only Properties 
+Om en property bara ska **kunna ta emot värden men inte läsas ut**, kan man använda bara `set`:
 ```csharp
 class SäkerData
 {
-    private string lösenord; // Privat fält lagrar värdet internt
+    // Vi gör ett privat fält
+    private string lösenord; 
 
-        public string Lösenord // Property med endast 'set', kan inte läsas ut
+    // Property med endast 'set', kan inte läsas ut, bara ändras
+    public string Lösenord 
     {
         set { lösenord = value; }
     }
 }
 ```
-**Används för:** Lösenord, känslig information där data bara ska kunna sättas.
+Kan vara användbart för exempelvis Lösenord och annan känslig information.
 
 ---
 
@@ -167,14 +180,16 @@ class Bil
 ```
 Objekt kan **tilldelas ett unikt ID**, men ingen annan kod kan ändra det efter att objektet skapats. Går dock bra att titta på ID via `get`.
 
-> [!tip] **När används `private set;`?**
-> Det används ofta för **ID-nummer** och andra värden som ska sättas en gång vid skapande men aldrig ändras efteråt.
-Om en property ska kunna **sättas internt i klassen** men bara **läsas externt**, kan vi använda `private set;`:
+!!! tip "När används `private set;`?"
+    Det används ofta för **ID-nummer** och andra värden som ska sättas en gång vid skapande men aldrig ändras efteråt.
+    Om en property ska kunna **sättas internt i klassen** men bara **läsas externt**, kan vi använda `private set;`:
 
-> [!summary] **Sammanfattning**
-> - `get` utan `set` gör en property **read-only**.
-> - `set` utan `get` gör en property **write-only**.
-> - `private set;` gör att propertyn bara kan sättas inuti klassen.
+
+!!! summary "Sammanfattning"
+    - `get` utan `set` gör en property **read-only**.
+    - `set` utan `get` gör en property **write-only**.
+    - `private set;` gör att propertyn bara kan sättas inuti klassen.
+
 
 
 
