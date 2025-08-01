@@ -124,7 +124,7 @@ class Bil
 ## Properties utan både Get och Set
 En property behöver inte alltid ha både `get` och `set`. 
 
-### 1. Read-Only Properties
+### Read-Only Properties
 Om ett värde **aldrig ska ändras** utanför klassen, kan man ha en property med bara `get`:
 ```csharp
 class Bil
@@ -143,7 +143,7 @@ class Bil
 ```
 Kan vara användbart för exempelvis unika ID:n och datum då objekt skapats.
 
-### 2. Write-Only Properties 
+### Write-Only Properties 
 Om en property bara ska **kunna ta emot värden men inte läsas ut**, kan man använda bara `set`:
 ```csharp
 class SäkerData
@@ -162,9 +162,10 @@ Kan vara användbart för exempelvis Lösenord och annan känslig information.
 
 ---
 
-## `private set;` – Skydda Properties från att ändras utanför klassen
+## Bästa av båda världar
+Ibland kan behovet att bara kunna ändra ett värde inne i klassen uppstå, alltså som att bara ha `set` i sin property, men det ska fortfarande gå att ändra värdet, utan att göra ett nytt objekt. 
 
-En property kan ha en **privat setter**, vilket innebär att värdet kan sättas **inuti klassen**, men är endast **läsbart utanför klassen**. Detta används ofta för data som sätts vid objektets skapande men inte ska kunna ändras efteråt.
+Till detta kan en **privat setter** användas, vilket innebär att värdet kan sättas inuti klassen, men är endast läsbart utanför klassen. Detta används ofta för data som sätts vid objektets skapande men inte ska kunna ändras efteråt.
 
 
 ```csharp
@@ -178,11 +179,8 @@ class Bil
     }
 }
 ```
-Objekt kan **tilldelas ett unikt ID**, men ingen annan kod kan ändra det efter att objektet skapats. Går dock bra att titta på ID via `get`.
+Objekt kan tilldelas ett unikt ID, men ingen kod utanför klassen kan ändra det efter att objektet skapats. Går dock bra att titta på ID via `get`.
 
-!!! tip "När används `private set;`?"
-    Det används ofta för **ID-nummer** och andra värden som ska sättas en gång vid skapande men aldrig ändras efteråt.
-    Om en property ska kunna **sättas internt i klassen** men bara **läsas externt**, kan vi använda `private set;`:
 
 
 !!! summary "Sammanfattning"

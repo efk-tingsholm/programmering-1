@@ -8,8 +8,8 @@ theme:
     accent: deep purple
 
 nav:                           # Navigation i sidomenyn 
-  - Start: index.md
-  - Modul 1:                   # Kan delas in i grupper med indentering
+  - Hem: index.md
+  - 1. Kom igång:                   # Kan delas in i grupper med indentering
       - Datorer & programmering: content/modul-1/1-datorer-och-programmering.md
       - Variabler: content/modul-1/2-variabler.md
       - Datatyper: content/modul-1/3-datatyper.md
@@ -20,7 +20,7 @@ nav:                           # Navigation i sidomenyn
       - Övningsuppgifter: content/modul-1/uppg1.md
       - Lösningsförslag: content/modul-1/lösn1.md
 
-  - Modul 2:
+  - 2. Villkor och logik:
       - Villkorssatser: content/modul-2/1-villkorssatser.md
       - Felhantering: content/modul-2/2-felhantering.md
       - ReadKey: content/modul-2/3-readkey.md
@@ -29,7 +29,7 @@ nav:                           # Navigation i sidomenyn
       - Uppgifter: content/modul-2/uppg2.md
       - Lösningar: content/modul-2/lösn2.md
 
-  - Modul 3:
+  - 3. Upprepning och data:
       - Repetitionssatser: content/modul-3/1-repetitionssatser.md
       - Strängarhantering och formatering: content/modul-3/2-strängar-format.md
       - Filhantering: content/modul-3/3-filhantering.md
@@ -38,14 +38,14 @@ nav:                           # Navigation i sidomenyn
       - Uppgifter: content/modul-3/uppg3.md
       - Lösningar: content/modul-3/lösn3.md
 
-  - Modul 4:
+  - 4. Metoder och arrayer:
       - Metoder: content/modul-4/1-metoder.md
       - Arrayer: content/modul-4/2-arrayer.md
       - Begrepp: content/modul-4/begrepp4.md
       - Uppgifter: content/modul-4/uppg4.md
       - Lösningar: content/modul-4/lösn4.md
 
-  - Modul 5:
+  - 5. Listor och dictionaries:
       - Listor: content/modul-5/1-listor.md
       - Dictionaries: content/modul-5/2-dictionaries.md
       - Referenstyp och värdetyp: content/modul-5/3-ref-värdetyp.md
@@ -54,7 +54,7 @@ nav:                           # Navigation i sidomenyn
       - Lösningar: content/modul-5/lösn5.md
 
 
-  - Modul 6:
+  - 6. Klasser och objekt:
       - Introduktion: content/modul-6/1-klasser-objekt-intro.md
       - Konstruktorer: content/modul-6/2-konstruktorer.md
       - Properties i C#: content/modul-6/3-properties.md
@@ -62,11 +62,7 @@ nav:                           # Navigation i sidomenyn
       - Uppgifter: content/modul-6/uppg6.md
       - Lösningar: content/modul-6/lösn6.md
 
-
-
-
-  - Modul 7:
-      - Temp: error.md
+  - 7. MonoGame: content/modul-7/monoguide-old.md
 
 
 # Rekommenderade setupen från mkdocs-material dokumentationen
