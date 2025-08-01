@@ -1377,9 +1377,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exempel-pa-hur-en-property-anvands-i-main" class="md-nav__link">
+  <a href="#anvandning" class="md-nav__link">
     <span class="md-ellipsis">
-      Exempel på hur en Property används i Main()
+      Användning
     </span>
   </a>
   
@@ -1419,18 +1419,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-read-only-properties-endast-get" class="md-nav__link">
+  <a href="#1-read-only-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Read-Only Properties (endast get)
+      1. Read-Only Properties
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-write-only-properties-endast-set" class="md-nav__link">
+  <a href="#2-write-only-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Write-Only Properties (endast set)
+      2. Write-Only Properties
     </span>
   </a>
   
@@ -1640,9 +1640,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exempel-pa-hur-en-property-anvands-i-main" class="md-nav__link">
+  <a href="#anvandning" class="md-nav__link">
     <span class="md-ellipsis">
-      Exempel på hur en Property används i Main()
+      Användning
     </span>
   </a>
   
@@ -1682,18 +1682,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-read-only-properties-endast-get" class="md-nav__link">
+  <a href="#1-read-only-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Read-Only Properties (endast get)
+      1. Read-Only Properties
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-write-only-properties-endast-set" class="md-nav__link">
+  <a href="#2-write-only-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Write-Only Properties (endast set)
+      2. Write-Only Properties
     </span>
   </a>
   
@@ -1734,7 +1734,7 @@
 <!-- ### Varför använda Properties istället för vanliga Getters och Setters? -->
 <p>Tidigare har vi använt metoder för att hämta och sätta värden. Där man måste skriva separata <code>Get</code>- och <code>Set</code>-metoder, vilket gör koden längre.</p>
 <p>En <strong>property</strong> (egenskap) är en mekanism i C# för att hantera åtkomst till en privat variabel i en klass. Properties används för att kontrollera hur data läses och skrivs, vilket är en viktig del av <strong>inkapsling</strong> i objektorienterad programmering.</p>
-<p>En property består av en <strong>getter</strong> och en <strong>setter</strong>:
+<p>En property består av en <strong>getter</strong> och en <strong>setter</strong>, motsvaras av kodblocken <code>get</code> och <code>set</code> i nedanstående exempel, där namnen är beskrivande, och <code>get</code> då hanterar om värdet ska hämtas (och sen förmodligen användas till något), medan <code>set</code> hanterar om värdet ska ändras.
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Privat fält</span>
@@ -1743,16 +1743,24 @@
 <span class="w">    </span><span class="c1">// Property</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span><span class="w"> </span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// När värdet från fältet &quot;hastighet&quot; ska hämtas och sen användas till något.</span>
 <span class="w">        </span><span class="k">get</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// När annan del av programmet försöker ändra värdet i &quot;hastighet&quot;.</span>
 <span class="w">        </span><span class="k">set</span><span class="w"> </span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">value</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1">// Validering av värdet</span>
+<span class="w">            </span><span class="c1">// Validering av det inkommande värdet, ändra bara om det är större ön noll.</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">value</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// Tilldelar det privata fältet &quot;hastighet&quot; det nya inkommande värdet.</span>
 <span class="w">                </span><span class="n">hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
-Det finns fördelar med properties, exempelvis: </p>
+</code></pre></div></p>
+<p>Properties bör namnges enligt den privata variabel som hanteras, men med inledande versal. Exempelvis för ovanstående kod, där det privata fältet <code>hastighet</code> hanteras av propertyn <code>Hastighet</code>.</p>
+<p>Det finns fördelar med properties, exempelvis: </p>
 <ul>
 <li><strong>Kortare och mer läsbar kod</strong> – eliminerar behovet av separata getter- och setter-metoder.</li>
 <li><strong>Inkapsling och kontroll</strong> – ser till att värden alltid sätts och hämtas enligt de regler vi definierat.</li>
@@ -1762,23 +1770,22 @@ Det finns fördelar med properties, exempelvis: </p>
 <p class="admonition-title">Tips</p>
 <p>Ja, jag förstår att att det inte är mer läsbart första gången man ser det... </p>
 </div>
-<h3 id="exempel-pa-hur-en-property-anvands-i-main">Exempel på hur en Property används i <code>Main()</code><a class="headerlink" href="#exempel-pa-hur-en-property-anvands-i-main" title="Permanent link">&para;</a></h3>
-<p>När en property har definierats kan den användas direkt i <code>Main()</code> för att sätta och läsa värden:
+<h3 id="anvandning">Användning<a class="headerlink" href="#anvandning" title="Permanent link">&para;</a></h3>
+<p>När en property har definierats kan den användas direkt i <code>Main()</code> för att sätta och läsa värden direkt via objektet.
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="n">Bil</span><span class="w"> </span><span class="n">minBil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bil</span><span class="p">();</span>
-<span class="w">        </span><span class="n">minBil</span><span class="p">.</span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="c1">// Använder propertyn för att sätta värdet</span>
-<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Bilens hastighet: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minBil</span><span class="p">.</span><span class="n">Hastighet</span><span class="p">);</span><span class="w"> </span><span class="c1">// Läser värdet</span>
+
+<span class="w">        </span><span class="c1">// Använder propertyn för att sätta värdet</span>
+<span class="w">        </span><span class="n">minBil</span><span class="p">.</span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="c1">// Skriver ut bilens hastighet med hjälp av propertyn</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Bilens hastighet: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minBil</span><span class="p">.</span><span class="n">Hastighet</span><span class="p">);</span><span class="w"> </span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
-Man använder propertyn som en vanlig variabel, men med <strong>validering</strong> inbyggd!</p>
-<div class="admonition tip">
-<p class="admonition-title">Namngivning</p>
-<p>En property bör alltid ha <strong>stor bokstav i början</strong> och motsvara namnet på det privata fältet.</p>
-</div>
+</code></pre></div></p>
 <hr />
 <h2 id="auto-properties">Auto-Properties<a class="headerlink" href="#auto-properties" title="Permanent link">&para;</a></h2>
 <p>Om ingen validering eller extra logik behövs, kan man använda <strong>auto-properties</strong>, vilket gör koden mer kompakt:
@@ -1787,20 +1794,16 @@ Man använder propertyn som en vanlig variabel, men med <strong>validering</stro
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// Auto-property</span>
 <span class="p">}</span>
 </code></pre></div></p>
-<p>C# skapar automatiskt ett <strong>privat fält i bakgrunden</strong>, så att vi slipper skriva ut det manuellt.</p>
-<blockquote>
-<p>[!tip] <strong>När ska auto-properties användas?</strong>
-Om ingen validering behövs, är auto-properties ett bättre alternativ än att skapa ett privat fält + full property.</p>
-</blockquote>
+<p>C# skapar automatiskt ett privat fält i bakgrunden, så att vi slipper skriva ut det manuellt.</p>
+<div class="admonition warning">
+<p class="admonition-title">Auto-property eller inte?</p>
+<p>Om ingen validering behövs, är auto-properties ett smidigt alternativ till att skapa ett privat fält + full property.</p>
+<p>Fundera på om det i mitt ovanstående exempel är lämpligt med en auto-property eller inte...</p>
+</div>
 <hr />
 <h2 id="anropa-properties-i-konstruktorn">Anropa Properties i Konstruktorn<a class="headerlink" href="#anropa-properties-i-konstruktorn" title="Permanent link">&para;</a></h2>
-<p>För att skydda data med validering bör propertyn alltid användas i konstruktorn istället för att sätta fältet direkt. </p>
-<ul>
-<li>Det säkerställer att valideringen från <code>set</code>-blocket återanvänds.</li>
-<li>Dubbel kod undviks och objektet skapas korrekt från början.</li>
-</ul>
-<p>Genom att använda propertyn i konstruktorn säkerställs att valideringen används korrekt.</p>
-<p><strong>Exempel – använder propertyn i konstruktorn</strong>:
+<p>Man kan skriva in validering i konstruktorn, som demonstrerats i föregående avsnitt. Man kan också skriva in validering i sina properties som demonstrerats här ovan. </p>
+<p>Men om man ändå använder properties med validering behöver man inte göra dubbelt jobb och skriva valideringen i konstruktorn också - man kan använda propertyn inne i konstruktorn istället, för propertyn har redan valideringen. </p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Privat fält</span>
@@ -1820,44 +1823,47 @@ Om ingen validering behövs, är auto-properties ett bättre alternativ än att 
 <span class="w">    </span><span class="c1">// Konstruktorn, tar inkommande värde och tilldelar till property</span>
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">hastighetIn</span><span class="p">)</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hastighetIn</span><span class="p">;</span><span class="w"> </span><span class="c1">// Använder propertyn för att säkerställa validering</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></p>
-<blockquote>
-<p>[!summary] <strong>Sammanfattning</strong>
-- Använd alltid propertyn i konstruktorn, inte det privata fältet.
-- Detta säkerställer att eventuell validering används konsekvent.</p>
-</blockquote>
-<hr />
-<h2 id="properties-utan-bade-get-och-set">Properties utan både Get och Set<a class="headerlink" href="#properties-utan-bade-get-och-set" title="Permanent link">&para;</a></h2>
-<p>En property behöver inte alltid ha både <code>get</code> och <code>set</code>. </p>
-<h3 id="1-read-only-properties-endast-get">1. Read-Only Properties (endast <code>get</code>)<a class="headerlink" href="#1-read-only-properties-endast-get" title="Permanent link">&para;</a></h3>
-<p>Om ett värde <strong>aldrig ska ändras</strong> utanför klassen, kan vi ha en property med <strong>bara <code>get</code></strong>:
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Färg</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// Auto-property med endast &#39;get&#39;, kan bara sättas i konstruktorn </span>
-
-<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">färg</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">                </span><span class="n">Färg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">färg</span><span class="p">;</span><span class="w"> </span><span class="c1">// Propertyn kan endast sättas vid objektets skapande</span>
+<span class="w">        </span><span class="c1">// Använder propertyn &quot;Hastighet&quot; för att säkerställa validering, </span>
+<span class="w">        </span><span class="c1">// istället för att tilldela till fältet &quot;hastighet&quot; direkt.</span>
+<span class="w">        </span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hastighetIn</span><span class="p">;</span><span class="w"> </span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<strong>Används för:</strong> ID:n, skapelsedatum, konstanta värden per objekt.</p>
-<h3 id="2-write-only-properties-endast-set">2. Write-Only Properties (endast <code>set</code>)<a class="headerlink" href="#2-write-only-properties-endast-set" title="Permanent link">&para;</a></h3>
-<p>Om en property bara ska <strong>kunna ta emot värden men inte läsas ut</strong>, kan vi använda <strong>bara <code>set</code></strong>:
+<hr />
+<h2 id="properties-utan-bade-get-och-set">Properties utan både Get och Set<a class="headerlink" href="#properties-utan-bade-get-och-set" title="Permanent link">&para;</a></h2>
+<p>En property behöver inte alltid ha både <code>get</code> och <code>set</code>. </p>
+<h3 id="1-read-only-properties">1. Read-Only Properties<a class="headerlink" href="#1-read-only-properties" title="Permanent link">&para;</a></h3>
+<p>Om ett värde <strong>aldrig ska ändras</strong> utanför klassen, kan man ha en property med bara <code>get</code>:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Auto-property med endast &#39;get&#39;, resten av programmet </span>
+<span class="w">    </span><span class="c1">// kan enbart hämta värdet</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Färg</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// Konstruktor, </span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">färg</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Vi låter konstruktorn vara enda tillfället då färgen kan tilldelas</span>
+<span class="w">        </span><span class="n">Färg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">färg</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+Kan vara användbart för exempelvis unika ID:n och datum då objekt skapats.</p>
+<h3 id="2-write-only-properties">2. Write-Only Properties<a class="headerlink" href="#2-write-only-properties" title="Permanent link">&para;</a></h3>
+<p>Om en property bara ska <strong>kunna ta emot värden men inte läsas ut</strong>, kan man använda bara <code>set</code>:
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SäkerData</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">lösenord</span><span class="p">;</span><span class="w"> </span><span class="c1">// Privat fält lagrar värdet internt</span>
+<span class="w">    </span><span class="c1">// Vi gör ett privat fält</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">lösenord</span><span class="p">;</span><span class="w"> </span>
 
-<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Lösenord</span><span class="w"> </span><span class="c1">// Property med endast &#39;set&#39;, kan inte läsas ut</span>
+<span class="w">    </span><span class="c1">// Property med endast &#39;set&#39;, kan inte läsas ut, bara ändras</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Lösenord</span><span class="w"> </span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="k">set</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">lösenord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<strong>Används för:</strong> Lösenord, känslig information där data bara ska kunna sättas.</p>
+Kan vara användbart för exempelvis Lösenord och annan känslig information.</p>
 <hr />
 <h2 id="private-set-skydda-properties-fran-att-andras-utanfor-klassen"><code>private set;</code> – Skydda Properties från att ändras utanför klassen<a class="headerlink" href="#private-set-skydda-properties-fran-att-andras-utanfor-klassen" title="Permanent link">&para;</a></h2>
 <p>En property kan ha en <strong>privat setter</strong>, vilket innebär att värdet kan sättas <strong>inuti klassen</strong>, men är endast <strong>läsbart utanför klassen</strong>. Detta används ofta för data som sätts vid objektets skapande men inte ska kunna ändras efteråt.</p>
@@ -1872,15 +1878,19 @@ Om ingen validering behövs, är auto-properties ett bättre alternativ än att 
 <span class="p">}</span>
 </code></pre></div>
 Objekt kan <strong>tilldelas ett unikt ID</strong>, men ingen annan kod kan ändra det efter att objektet skapats. Går dock bra att titta på ID via <code>get</code>.</p>
-<blockquote>
-<p>[!tip] <strong>När används <code>private set;</code>?</strong>
-Det används ofta för <strong>ID-nummer</strong> och andra värden som ska sättas en gång vid skapande men aldrig ändras efteråt.
+<div class="admonition tip">
+<p class="admonition-title">När används <code>private set;</code>?</p>
+<p>Det används ofta för <strong>ID-nummer</strong> och andra värden som ska sättas en gång vid skapande men aldrig ändras efteråt.
 Om en property ska kunna <strong>sättas internt i klassen</strong> men bara <strong>läsas externt</strong>, kan vi använda <code>private set;</code>:</p>
-<p>[!summary] <strong>Sammanfattning</strong>
-- <code>get</code> utan <code>set</code> gör en property <strong>read-only</strong>.
-- <code>set</code> utan <code>get</code> gör en property <strong>write-only</strong>.
-- <code>private set;</code> gör att propertyn bara kan sättas inuti klassen.</p>
-</blockquote>
+</div>
+<div class="admonition summary">
+<p class="admonition-title">Sammanfattning</p>
+<ul>
+<li><code>get</code> utan <code>set</code> gör en property <strong>read-only</strong>.</li>
+<li><code>set</code> utan <code>get</code> gör en property <strong>write-only</strong>.</li>
+<li><code>private set;</code> gör att propertyn bara kan sättas inuti klassen.</li>
+</ul>
+</div>
 
 
 
