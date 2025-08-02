@@ -1,6 +1,6 @@
 # Konstruktorer
 
-ATT GÖRA: Se över klasser och objekt....
+ATT GÖRA: Den här är kaos, ej fixad.
 
 ## Vad är en konstruktor?
 
@@ -53,7 +53,7 @@ I många fall vill vi dock förhindra att objekt skapas utan vissa viktiga värd
 
 En **konstruktor** är en speciell metod i en klass som anropas automatiskt när ett objekt skapas. Dess huvudsakliga syfte är att sätta startvärden för objektets variabler och säkerställa att objektet är i ett giltigt tillstånd direkt vid skapandet.
 
-### Exempel utan konstruktor
+### Utan konstruktor
 Utan en konstruktor måste varje objekt initialiseras manuellt:
 ```csharp
 class Bil
@@ -83,9 +83,9 @@ class Program
 }
 ```
 
----
 
-### Exempel med konstruktor
+
+### Med konstruktor
 
 När en konstruktor har parametrar som har samma namn som klassens fält används **`this`** för att skilja dem åt. `this` refererar till klassens egna variabler och gör att vi kan tilldela fält rätt värden utan att det blir otydligt.
 
@@ -208,7 +208,7 @@ class Program
 
 ---
 
-## `this` och kedjade konstruktörer
+## `this` och kedjade konstrukt0rer
 Nyckelordet **`this`** används inom en klass för att referera till klassens egna medlemmar. Det används också för att **anropa en annan konstruktor** inom samma klass.
 
 ```csharp
