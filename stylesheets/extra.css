@@ -1,0 +1,39 @@
+/* 
+HÄR
+https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/_colors.scss 
+*/
+
+
+/* :root  > * {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+} */
+
+
+
+
+
+
+
+/* GRADIENT + TRANSPARENT NAV TITEL */
+/* .md-main {
+  background: linear-gradient(to bottom right, #0044ff, #e0e6f0);
+}
+
+.md-nav--primary .md-nav__title {
+    background: transparent;
+    box-shadow: none;
+} */
+
+
+/* Ta bort rubriken för nav-baren, jag har "hem" där istället */
+.md-nav--primary .md-nav__title {
+    color: transparent;
+}
+
+/* Lägg till vertikalt mellanrum mellan varje menyobjekt */
+.md-nav--primary .md-nav__item {
+  margin-bottom: 0.5rem;
+  /* font-size: 0.8rem; */
+}
