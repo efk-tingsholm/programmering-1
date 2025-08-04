@@ -2,7 +2,7 @@
 
 Beskrivande flufftext här!
 
-Modul 7 har ej uppdaterats än och existerar därför här i pdf-version.
+Modul 7 har ej uppdaterats från pdf. Alltså tittar man på pdf-arna.
 
 [1. Lägga in bild](monoguide-old-pdf/01%20MG%20Lägga%20in%20Bild.pdf){:target="_blank"}
 

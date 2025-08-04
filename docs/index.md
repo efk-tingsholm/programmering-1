@@ -19,12 +19,18 @@ Kan gömma innehåll via högst upp i markdownen:
 
 Kursmaterial för kursen programmering 1, med C\#.
 
-Startsidan här är lite tom i nuläget.
+Startsidan här är lite tom i nuläget. (ATT GÖRA: snygga till den här sidan.)
 
 ## Kursinnehåll
 Materialet är indelat i 7 moduler, se vänster. 
 
 ## Guider
+
+Ej uppdaterade från pdf.
+
+[Installera Visual Studio](content/guides/Guide%20-%20Installera%20Visual%20Studio.pdf){:target="_blank"}
+
+[Lämna in projekt i classroom](content/guides/Guide%20Lämna%20in%20VS.pdf){:target="_blank"}
 
 ## Tips
 

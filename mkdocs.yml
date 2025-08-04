@@ -25,11 +25,12 @@ theme:
     next: fontawesome/solid/angle-right
 
   # Färger
+  # red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue grey, black, white
   palette:
     # Palette toggle for light mode
     - scheme: default
-      primary: teal
-      accent: purple
+      primary: deep purple
+      accent: teal
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -42,6 +43,9 @@ theme:
         name: Switch to light mode
 
 
+# ---EXTRA CSS---
+extra_css:
+  - stylesheets/extra.css
 
   
 # ---NAVIGATION---
