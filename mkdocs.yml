@@ -64,7 +64,7 @@ nav:
 
   - 2. Villkor och logik:
       - Villkorssatser: content/modul-2/villkorssatser.md
-      - If: content/modul-2/villkor-if.md
+      - If-sats: content/modul-2/villkor-if.md
       - Switch: content/modul-2/villkor-switch.md
       - Felhantering: content/modul-2/felhantering.md
       - ReadKey: content/modul-2/readkey.md
