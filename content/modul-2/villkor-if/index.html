@@ -20,7 +20,7 @@
     
     
       
-        <title>If - Programmering 1</title>
+        <title>If-sats - Programmering 1</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#if" class="md-skip">
+        <a href="#if-sats" class="md-skip">
           Gå till innehållet
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              If
+              If-sats
             
           </span>
         </div>
@@ -585,7 +585,7 @@
   
   
   <span class="md-ellipsis">
-    If
+    If-sats
     
   </span>
   
@@ -598,7 +598,7 @@
   
   
   <span class="md-ellipsis">
-    If
+    If-sats
     
   </span>
   
@@ -621,25 +621,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#if-satser" class="md-nav__link">
-    <span class="md-ellipsis">
-      If-satser
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="If-satser">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#if_1" class="md-nav__link">
+  <a href="#if" class="md-nav__link">
     <span class="md-ellipsis">
       If
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#else" class="md-nav__link">
     <span class="md-ellipsis">
       else
@@ -647,8 +637,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#else-if" class="md-nav__link">
     <span class="md-ellipsis">
       else if
@@ -656,9 +646,13 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#nastlade-villkorssatser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nästlade villkorssatser
+    </span>
+  </a>
   
 </li>
       
@@ -1620,25 +1614,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#if-satser" class="md-nav__link">
-    <span class="md-ellipsis">
-      If-satser
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="If-satser">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#if_1" class="md-nav__link">
+  <a href="#if" class="md-nav__link">
     <span class="md-ellipsis">
       If
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#else" class="md-nav__link">
     <span class="md-ellipsis">
       else
@@ -1646,8 +1630,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#else-if" class="md-nav__link">
     <span class="md-ellipsis">
       else if
@@ -1655,9 +1639,13 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#nastlade-villkorssatser" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nästlade villkorssatser
+    </span>
+  </a>
   
 </li>
       
@@ -1677,11 +1665,10 @@
 
 
 
-<h1 id="if">If<a class="headerlink" href="#if" title="Permanent link">&para;</a></h1>
+<h1 id="if-sats">If-sats<a class="headerlink" href="#if-sats" title="Permanent link">&para;</a></h1>
 <p>Det är oftast önskvärt att ett program kan utvärdera givna villkor och välja vilken eller vilka kodrader som ska utföras och i vilken ordning. Ett sådant val, att välja, kallas <strong>selektion</strong>.</p>
 <p>Ett vanligt alternativ är <strong>if-satsen</strong>, som kan kombineras med <code>else if</code> och <code>else</code> för att passa olika situationer.</p>
-<h2 id="if-satser">If-satser<a class="headerlink" href="#if-satser" title="Permanent link">&para;</a></h2>
-<h3 id="if_1">If<a class="headerlink" href="#if_1" title="Permanent link">&para;</a></h3>
+<h2 id="if">If<a class="headerlink" href="#if" title="Permanent link">&para;</a></h2>
 <p>En if-sats är ett villkorat kodblock. Källkoden som står inne i blocket körs bara om villkoret mellan parenteserna är sant. Villkoret mellan parenteserna måste vara ett boolskt uttryck.</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
 <span class="p">{</span>
@@ -1710,7 +1697,8 @@
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Personen heter Emil och arbetar som lärare.&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="else">else<a class="headerlink" href="#else" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="else">else<a class="headerlink" href="#else" title="Permanent link">&para;</a></h2>
 <p>Kompletterar en if-sats. Koden i else-blocket körs om if-satsen INTE är sann. Else har inget eget villkor, och kan inte användas fristående från en if-sats.
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
 <span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
@@ -1726,7 +1714,8 @@
 
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// Utskriften ger -30.</span>
 </code></pre></div></p>
-<h3 id="else-if">else if<a class="headerlink" href="#else-if" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="else-if">else if<a class="headerlink" href="#else-if" title="Permanent link">&para;</a></h2>
 <p>Kan användas för att skapa en kedja av villkor, där varje villkor utvärderas om det föregående villkoret är falskt.
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 
@@ -1743,6 +1732,33 @@
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Högre än noll, lägre än fem!&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></p>
+<hr />
+<h2 id="nastlade-villkorssatser">Nästlade villkorssatser<a class="headerlink" href="#nastlade-villkorssatser" title="Permanent link">&para;</a></h2>
+<p>Det går bra att ha en villkorssats inuti en annan villkorssats, dessa kallas då nästlade (nested). </p>
+<p>Exempel på nästlade if-satser.
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Talet är större än 10.&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Talet är större än 20.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Talet är 20 eller mindre.&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Talet är 10 eller mindre.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tips</p>
+<p>Det går att nästla många villkorssatser, men ju fler satser som nästlas i varandra desto sämre blir läsbarheten. </p>
+<p>Var uppmärksam på detta och undvik i möjligaste mån att gröta till det.</p>
+</div>
 
 
 

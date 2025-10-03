@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#switch" class="md-skip">
+          Gå till innehållet
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -571,7 +576,7 @@
   
   
   <span class="md-ellipsis">
-    If
+    If-sats
     
   </span>
   
@@ -595,6 +600,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Switch
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -607,6 +627,67 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fall-through" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fall-through
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intervall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervall
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-uttryck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch-uttryck
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Switch-uttryck">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intervall-med-switch-uttryck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervall med switch-uttryck
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1529,6 +1610,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fall-through" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fall-through
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intervall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervall
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switch-uttryck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch-uttryck
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Switch-uttryck">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intervall-med-switch-uttryck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intervall med switch-uttryck
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1544,9 +1677,110 @@
 
 
 
-  <h1>Switch</h1>
+<h1 id="switch">Switch<a class="headerlink" href="#switch" title="Permanent link">&para;</a></h1>
+<p>En switch-sats jämför värdet på en variabel med flera olika alternativ. Det är användbart om variabeln bara kan anta ett begränsat antal värden, exempelvis veckodagar.</p>
+<p>If och switch används båda två för <strong>selektion</strong>. Lite förenklat kan switch sägas vara effektivare när det finns många alternativ. </p>
+<p>Exemplet nedan tar in ett namn från användaren, och sen kan ett av fyra fall (case) att inträffa. Notera hur varje <code>case</code> avslutas med nyckelordet <code>break</code>.
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">namn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
 
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">namn</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Arne&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du heter Arne.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
 
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Bodil&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du heter Bodil.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Cecilia&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du heter Cecilia.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">default</span><span class="p">:</span><span class="w"> </span><span class="c1">// Om inget av de övriga fallen inträffar</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Du heter något som inte känns igen av programmet.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h2 id="fall-through">Fall-through<a class="headerlink" href="#fall-through" title="Permanent link">&para;</a></h2>
+<p>Inte hittat en bra svensk översättning. </p>
+<p>I nedanstående exempel har case 2 inget innehåll och avslutas inte med break. Detta leder till att case 3 utförs. Detta fungerar endast eftersom case 2 varken har kod i sig eller ett avslutande <code>break</code>. </p>
+<p>Användbart om flera alternativ ska leda till samma utfall.
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Värdet är 1&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="c1">// Om a är 2 kommer vi att &quot;falla igenom&quot; case 2 och &quot;ramla ner&quot; i case 3.</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Värdet kan vara 2 eller 3.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">default</span><span class="p">:</span><span class="w"> </span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Värdet är något annat!&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h2 id="intervall">Intervall<a class="headerlink" href="#intervall" title="Permanent link">&para;</a></h2>
+<p>Kan uppnås med <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#relational-patterns">relationsmönster</a>, kortfattat att man använder jämförelseoperatorer direkt i sitt case.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Värdet är mindre än eller lika med 5&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">50</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Värdet är större än 50 och mindre än 100.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Värdet är något annat!&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="switch-uttryck">Switch-uttryck<a class="headerlink" href="#switch-uttryck" title="Permanent link">&para;</a></h2>
+<p>Från engelskans <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression">switch expression</a>. </p>
+<p>Ett <strong>switch‑uttryck</strong> är en kompakt form av <code>switch</code> som tilldelar ett värde. Det passar när flera alternativ ska ge olika resultat (t.ex. namn, färg, text), utan att skriva hela kodblock som i en switch‑sats.</p>
+<div class="admonition info">
+<p class="admonition-title">Varför switch‑uttryck?</p>
+<p>Kort och lättläst när målet är <em>ett värde</em>. Inga <code>case</code>/<code>break</code>; i stället används <code>mönster =&gt; uttryck</code>.</p>
+</div>
+<p>I nedanstående exempel tilldelas variabeln <code>veckodag</code> ett värde baserat på värdet i variabeln <code>tal</code>. Det första villkoret som stämmer utförs, precis som i en if-sats.
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">tal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="c1">// Tilldela värdet baserat på ett switch-uttryck för variabeln tal, lättläst.</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">veckodag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tal</span><span class="w"> </span><span class="k">switch</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="mi">1</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Mån&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">2</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Tis&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">3</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Ons&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">4</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Tors&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">5</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Fre&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">6</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Lör&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="mi">7</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Sön&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">_</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Okänd dag&quot;</span><span class="w">   </span><span class="c1">// Default case, om tal är något annat värde än 1-7</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<hr />
+<h3 id="intervall-med-switch-uttryck">Intervall med switch-uttryck<a class="headerlink" href="#intervall-med-switch-uttryck" title="Permanent link">&para;</a></h3>
+<p>Kan göras på motsvarande sätt som för vanliga switch-satser. Nedanstående exempel tilldelar variabeln <code>känsla</code> ett värde baserat på värdet i variabeln <code>celsius</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">celsius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">17</span><span class="p">;</span>
+
+<span class="kt">string</span><span class="w"> </span><span class="n">känsla</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">celsius</span><span class="w"> </span><span class="k">switch</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w">   </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Kallt&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">25</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Lagom&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">_</span><span class="w">     </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">&quot;Varmt&quot;</span>
+<span class="p">};</span>
+</code></pre></div>
 
 
 
@@ -1582,7 +1816,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Sidfot" >
         
           
-          <a href="../villkor-if/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: If">
+          <a href="../villkor-if/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: If-sats">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -1592,7 +1826,7 @@
                 Föregående
               </span>
               <div class="md-ellipsis">
-                If
+                If-sats
               </div>
             </div>
           </a>
