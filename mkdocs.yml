@@ -52,57 +52,58 @@ extra_css:
 nav:                          
   - Hem: index.md
   - 1. Grundläggande:                   # Kan delas in i grupper med indentering
-      - Datorer & programmering: content/modul-1/1-datorer-och-programmering.md
-      - Variabler: content/modul-1/2-variabler.md
-      - Datatyper: content/modul-1/3-datatyper.md
-      - Operatorer: content/modul-1/4-operatorer.md
-      - Typkonvertering: content/modul-1/5-typkonvertering.md
-      - Slumptal: content/modul-1/6-slump.md
-      - Begrepp: content/modul-1/begrepp1.md
-      - Övningsuppgifter: content/modul-1/uppg1.md
-      - Lösningsförslag: content/modul-1/lösn1.md
+      - Datorer & programmering: content/modul-1/datorer-och-programmering.md
+      - Variabler: content/modul-1/variabler.md
+      - Datatyper: content/modul-1/datatyper.md
+      - Operatorer: content/modul-1/operatorer.md
+      - Typkonvertering: content/modul-1/typkonvertering.md
+      - Slumptal: content/modul-1/slump.md
+      - Begrepp: content/modul-1/_begrepp01.md
+      - Övningsuppgifter: content/modul-1/_uppg01.md
+      - Lösningsförslag: content/modul-1/_lösn01.md
 
   - 2. Villkor och logik:
-      - Villkorssatser: content/modul-2/1-villkorssatser.md
-      - Felhantering: content/modul-2/2-felhantering.md
-      - ReadKey: content/modul-2/3-readkey.md
-      - Villkorsoperatorn: content/modul-2/4-villkorsoperatorn.md
-      - Begrepp: content/modul-2/begrepp2.md
-      - Uppgifter: content/modul-2/uppg2.md
-      - Lösningar: content/modul-2/lösn2.md
+      - Villkorssatser: content/modul-2/villkorssatser.md
+      - If: content/modul-2/villkor-if.md
+      - Switch: content/modul-2/villkor-switch.md
+      - Felhantering: content/modul-2/felhantering.md
+      - ReadKey: content/modul-2/readkey.md
+      - Villkorsoperatorn: content/modul-2/villkorsoperatorn.md
+      - Begrepp: content/modul-2/_begrepp02.md
+      - Uppgifter: content/modul-2/_uppg02.md
+      - Lösningar: content/modul-2/_lösn02.md
 
   - 3. Upprepning och data:
-      - Repetitionssatser: content/modul-3/1-repetitionssatser.md
-      - Strängarhantering och formatering: content/modul-3/2-strängar-format.md
-      - Filhantering: content/modul-3/3-filhantering.md
-      - Algoritmer, pseudokod & aktivitetsdiagram: content/modul-3/4-alg-pseudo-aktdiag.md
-      - Begrepp: content/modul-3/begrepp3.md
-      - Uppgifter: content/modul-3/uppg3.md
-      - Lösningar: content/modul-3/lösn3.md
+      - Repetitionssatser: content/modul-3/repetitionssatser.md
+      - Strängarhantering och formatering: content/modul-3/strängar-format.md
+      - Filhantering: content/modul-3/filhantering.md
+      - Algoritmer, pseudokod & aktivitetsdiagram: content/modul-3/alg-pseudo-aktdiag.md
+      - Begrepp: content/modul-3/_begrepp03.md
+      - Uppgifter: content/modul-3/_uppg03.md
+      - Lösningar: content/modul-3/_lösn03.md
 
   - 4. Metoder och arrayer:
-      - Metoder: content/modul-4/1-metoder.md
-      - Arrayer: content/modul-4/2-arrayer.md
-      - Begrepp: content/modul-4/begrepp4.md
-      - Uppgifter: content/modul-4/uppg4.md
-      - Lösningar: content/modul-4/lösn4.md
+      - Metoder: content/modul-4/metoder.md
+      - Arrayer: content/modul-4/arrayer.md
+      - Begrepp: content/modul-4/_begrepp04.md
+      - Uppgifter: content/modul-4/_uppg04.md
+      - Lösningar: content/modul-4/_lösn04.md
 
   - 5. Listor och dictionaries:
-      - Listor: content/modul-5/1-listor.md
-      - Dictionaries: content/modul-5/2-dictionaries.md
-      - Referenstyp och värdetyp: content/modul-5/3-ref-värdetyp.md
-      - Begrepp: content/modul-5/begrepp5.md
-      - Uppgifter: content/modul-5/uppg5.md
-      - Lösningar: content/modul-5/lösn5.md
-
+      - Listor: content/modul-5/listor.md
+      - Dictionaries: content/modul-5/dictionaries.md
+      - Referenstyp och värdetyp: content/modul-5/ref-värdetyp.md
+      - Begrepp: content/modul-5/_begrepp05.md
+      - Uppgifter: content/modul-5/_uppg05.md
+      - Lösningar: content/modul-5/_lösn05.md
 
   - 6. Klasser och objekt:
-      - Introduktion: content/modul-6/1-klasser-objekt-intro.md
-      - Konstruktorer: content/modul-6/2-konstruktorer.md
-      - Properties i C#: content/modul-6/3-properties.md
-      - Begrepp: content/modul-6/begrepp6.md
-      - Uppgifter: content/modul-6/uppg6.md
-      - Lösningar: content/modul-6/lösn6.md
+      - Introduktion: content/modul-6/klasser-objekt-intro.md
+      - Konstruktorer: content/modul-6/konstruktorer.md
+      - Properties i C#: content/modul-6/properties.md
+      - Begrepp: content/modul-6/_begrepp06.md
+      - Uppgifter: content/modul-6/_uppg06.md
+      - Lösningar: content/modul-6/_lösn06.md
 
   - 7. MonoGame: content/modul-7/monoguide-old.md
 
