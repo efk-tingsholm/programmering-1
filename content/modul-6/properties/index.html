@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../../modul-6/_l%C3%B6sn06/">
+        <link rel="prev" href="../konstruktorer/">
       
+      
+        <link rel="next" href="../_begrepp06/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>7. MonoGame - Programmering 1</title>
+        <title>Properties i C# - Programmering 1</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monogame" class="md-skip">
+        <a href="#properties-i-c" class="md-skip">
           Gå till innehållet
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. MonoGame
+              Properties i C#
             
           </span>
         </div>
@@ -1304,18 +1306,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1331,7 +1335,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             6. Klasser och objekt
@@ -1345,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-6/klasser-objekt-intro/" class="md-nav__link">
+      <a href="../klasser-objekt-intro/" class="md-nav__link">
         
   
   
@@ -1368,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-6/konstruktorer/" class="md-nav__link">
+      <a href="../konstruktorer/" class="md-nav__link">
         
   
   
@@ -1388,10 +1392,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../modul-6/properties/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Properties i C#
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1402,6 +1428,110 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vad-ar-en-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vad är en Property?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vad är en Property?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anvandning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Användning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anropa-properties-i-konstruktorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anropa Properties i Konstruktorn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-utan-bade-get-och-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties utan både Get och Set
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties utan både Get och Set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read-only-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Read-Only Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-only-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Write-Only Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basta-av-bada-varldar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bästa av båda världar
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1414,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-6/_begrepp06/" class="md-nav__link">
+      <a href="../_begrepp06/" class="md-nav__link">
         
   
   
@@ -1437,7 +1567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-6/_uppg06/" class="md-nav__link">
+      <a href="../_uppg06/" class="md-nav__link">
         
   
   
@@ -1460,7 +1590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-6/_l%C3%B6sn06/" class="md-nav__link">
+      <a href="../_l%C3%B6sn06/" class="md-nav__link">
         
   
   
@@ -1487,19 +1617,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../modul-7/monoguide-old/" class="md-nav__link">
         
   
   
@@ -1510,7 +1631,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1535,6 +1655,98 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vad-ar-en-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vad är en Property?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vad är en Property?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anvandning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Användning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anropa-properties-i-konstruktorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anropa Properties i Konstruktorn
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-utan-bade-get-och-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties utan både Get och Set
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties utan både Get och Set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read-only-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Read-Only Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-only-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Write-Only Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basta-av-bada-varldar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bästa av båda världar
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1549,16 +1761,164 @@
 
 
 
-<h1 id="monogame">MonoGame<a class="headerlink" href="#monogame" title="Permanent link">&para;</a></h1>
-<p>Beskrivande flufftext här!</p>
-<p>Modul 7 har ej uppdaterats från pdf. Alltså tittar man på pdf-arna.</p>
-<p><a href="../monoguide-old-pdf/01%20MG%20L%C3%A4gga%20in%20Bild.pdf" target="_blank">1. Lägga in bild</a></p>
-<p><a href="../monoguide-old-pdf/02%20MG%20Storlek%20och%20Rotation.pdf" target="_blank">2. Storlek och rotation</a></p>
-<p><a href="../monoguide-old-pdf/03%20MG%20R%C3%B6relse.pdf" target="_blank">3. Rörelse </a></p>
-<p><a href="../monoguide-old-pdf/04%20MG%20Tangentbord%20och%20Mus.pdf" target="_blank">4. Tangentbord och mus</a></p>
-<p><a href="../monoguide-old-pdf/05%20MG%20Text%20och%20Ljud.pdf" target="_blank">5. Text och ljud</a></p>
-<p><a href="../monoguide-old-pdf/06%20MG%20Enkel%20Kollision.pdf" target="_blank">6. Enkel kollision</a></p>
-<p><a href="../monoguide-old-pdf/07%20MG%20Enkel%20Animering.pdf" target="_blank">7. Enkel animation</a></p>
+<h1 id="properties-i-c">Properties i C<a class="headerlink" href="#properties-i-c" title="Permanent link">&para;</a></h1>
+<h2 id="vad-ar-en-property">Vad är en Property?<a class="headerlink" href="#vad-ar-en-property" title="Permanent link">&para;</a></h2>
+<!-- ### Varför använda Properties istället för vanliga Getters och Setters? -->
+<p>Tidigare har vi använt metoder för att hämta och sätta värden. Där man måste skriva separata <code>Get</code>- och <code>Set</code>-metoder, vilket gör koden längre.</p>
+<p>En <strong>property</strong> (egenskap) är en mekanism i C# för att hantera åtkomst till en privat variabel i en klass. Properties används för att kontrollera hur data läses och skrivs, vilket är en viktig del av <strong>inkapsling</strong> i objektorienterad programmering.</p>
+<p>En property består av en <strong>getter</strong> och en <strong>setter</strong>, motsvaras av kodblocken <code>get</code> och <code>set</code> i nedanstående exempel, där namnen är beskrivande, och <code>get</code> då hanterar om värdet ska hämtas (och sen förmodligen användas till något), medan <code>set</code> hanterar om värdet ska ändras.
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Privat fält</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// Property</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// När värdet från fältet &quot;hastighet&quot; ska hämtas och sen användas till något.</span>
+<span class="w">        </span><span class="k">get</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// När annan del av programmet försöker ändra värdet i &quot;hastighet&quot;.</span>
+<span class="w">        </span><span class="k">set</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">// Validering av det inkommande värdet, ändra bara om det är större ön noll.</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">value</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// Tilldelar det privata fältet &quot;hastighet&quot; det nya inkommande värdet.</span>
+<span class="w">                </span><span class="n">hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Properties bör namnges enligt den privata variabel som hanteras, men med inledande versal. Exempelvis för ovanstående kod, där det privata fältet <code>hastighet</code> hanteras av propertyn <code>Hastighet</code>.</p>
+<p>Det finns fördelar med properties, exempelvis: </p>
+<ul>
+<li><strong>Kortare och mer läsbar kod</strong> – eliminerar behovet av separata getter- och setter-metoder.</li>
+<li><strong>Inkapsling och kontroll</strong> – ser till att värden alltid sätts och hämtas enligt de regler vi definierat.</li>
+<li><strong>Inbyggd validering</strong> – istället för att skapa en separat metod för att validera data, kan det göras direkt i <code>set</code>-blocket.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tips</p>
+<p>Ja, jag förstår att att det inte är mer läsbart första gången man ser det... </p>
+</div>
+<h3 id="anvandning">Användning<a class="headerlink" href="#anvandning" title="Permanent link">&para;</a></h3>
+<p>När en property har definierats kan den användas direkt i <code>Main()</code> för att sätta och läsa värden direkt via objektet.
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Program</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Bil</span><span class="w"> </span><span class="n">minBil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Bil</span><span class="p">();</span>
+
+<span class="w">        </span><span class="c1">// Använder propertyn för att sätta värdet</span>
+<span class="w">        </span><span class="n">minBil</span><span class="p">.</span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">        </span><span class="c1">// Skriver ut bilens hastighet med hjälp av propertyn</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Bilens hastighet: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minBil</span><span class="p">.</span><span class="n">Hastighet</span><span class="p">);</span><span class="w"> </span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h2 id="auto-properties">Auto-Properties<a class="headerlink" href="#auto-properties" title="Permanent link">&para;</a></h2>
+<p>Om ingen validering eller extra logik behövs, kan man använda <strong>auto-properties</strong>, vilket gör koden mer kompakt:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// Auto-property</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>C# skapar automatiskt ett privat fält i bakgrunden, så att vi slipper skriva ut det manuellt.</p>
+<div class="admonition warning">
+<p class="admonition-title">Auto-property eller inte?</p>
+<p>Om ingen validering behövs, är auto-properties ett smidigt alternativ till att skapa ett privat fält + full property.</p>
+<p>Fundera på om det i mitt ovanstående exempel är lämpligt med en auto-property eller inte...</p>
+</div>
+<hr />
+<h2 id="anropa-properties-i-konstruktorn">Anropa Properties i Konstruktorn<a class="headerlink" href="#anropa-properties-i-konstruktorn" title="Permanent link">&para;</a></h2>
+<p>Man kan skriva in validering i konstruktorn, som demonstrerats i föregående avsnitt. Man kan också skriva in validering i sina properties som demonstrerats här ovan. </p>
+<p>Men om man ändå använder properties med validering behöver man inte göra dubbelt jobb och skriva valideringen i konstruktorn också - man kan använda propertyn inne i konstruktorn istället, för propertyn har redan valideringen. </p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Privat fält</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Vanlig property, validering för set</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">get</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">set</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">value</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">                </span><span class="n">hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Konstruktorn, tar inkommande värde och tilldelar till property</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">hastighetIn</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Använder propertyn &quot;Hastighet&quot; för att säkerställa validering, </span>
+<span class="w">        </span><span class="c1">// istället för att tilldela till fältet &quot;hastighet&quot; direkt.</span>
+<span class="w">        </span><span class="n">Hastighet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hastighetIn</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="properties-utan-bade-get-och-set">Properties utan både Get och Set<a class="headerlink" href="#properties-utan-bade-get-och-set" title="Permanent link">&para;</a></h2>
+<p>En property behöver inte alltid ha både <code>get</code> och <code>set</code>. </p>
+<h3 id="read-only-properties">Read-Only Properties<a class="headerlink" href="#read-only-properties" title="Permanent link">&para;</a></h3>
+<p>Om ett värde <strong>aldrig ska ändras</strong> utanför klassen, kan man ha en property med bara <code>get</code>:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Auto-property med endast &#39;get&#39;, resten av programmet </span>
+<span class="w">    </span><span class="c1">// kan enbart hämta värdet</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Färg</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// Konstruktor, </span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">färg</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Vi låter konstruktorn vara enda tillfället då färgen kan tilldelas</span>
+<span class="w">        </span><span class="n">Färg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">färg</span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+Kan vara användbart för exempelvis unika ID:n och datum då objekt skapats.</p>
+<h3 id="write-only-properties">Write-Only Properties<a class="headerlink" href="#write-only-properties" title="Permanent link">&para;</a></h3>
+<p>Om en property bara ska <strong>kunna ta emot värden men inte läsas ut</strong>, kan man använda bara <code>set</code>:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SäkerData</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Vi gör ett privat fält</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">lösenord</span><span class="p">;</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// Property med endast &#39;set&#39;, kan inte läsas ut, bara ändras</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Lösenord</span><span class="w"> </span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">set</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">lösenord</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+Kan vara användbart för exempelvis Lösenord och annan känslig information.</p>
+<hr />
+<h2 id="basta-av-bada-varldar">Bästa av båda världar<a class="headerlink" href="#basta-av-bada-varldar" title="Permanent link">&para;</a></h2>
+<p>Ibland kan behovet att bara kunna ändra ett värde inne i klassen uppstå, alltså som att bara ha <code>set</code> i sin property, men det ska fortfarande gå att ändra värdet, utan att göra ett nytt objekt. </p>
+<p>Till detta kan en <strong>privat setter</strong> användas, vilket innebär att värdet kan sättas inuti klassen, men är endast läsbart utanför klassen. Detta används ofta för data som sätts vid objektets skapande men inte ska kunna ändras efteråt.</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Bil</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">private</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c1">// Kan bara sättas inom klassen</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">Bil</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">id</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">id</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+Objekt kan tilldelas ett unikt ID, men ingen kod utanför klassen kan ändra det efter att objektet skapats. Går dock bra att titta på ID via <code>get</code>.</p>
+<div class="admonition summary">
+<p class="admonition-title">Sammanfattning</p>
+<ul>
+<li><code>get</code> utan <code>set</code> gör en property <strong>read-only</strong>.</li>
+<li><code>set</code> utan <code>get</code> gör en property <strong>write-only</strong>.</li>
+<li><code>private set;</code> gör att propertyn bara kan sättas inuti klassen.</li>
+</ul>
+</div>
 
 
 
@@ -1594,7 +1954,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Sidfot" >
         
           
-          <a href="../../modul-6/_l%C3%B6sn06/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: Lösningar">
+          <a href="../konstruktorer/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: Konstruktorer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -1604,11 +1964,27 @@
                 Föregående
               </span>
               <div class="md-ellipsis">
-                Lösningar
+                Konstruktorer
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../_begrepp06/" class="md-footer__link md-footer__link--next" aria-label="Nästa: Begrepp">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Nästa
+              </span>
+              <div class="md-ellipsis">
+                Begrepp
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

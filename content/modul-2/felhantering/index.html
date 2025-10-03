@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../../modul-6/_l%C3%B6sn06/">
+        <link rel="prev" href="../villkor-switch/">
       
+      
+        <link rel="next" href="../readkey/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>7. MonoGame - Programmering 1</title>
+        <title>Felhantering - Programmering 1</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monogame" class="md-skip">
+        <a href="#felhantering" class="md-skip">
           Gå till innehållet
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. MonoGame
+              Felhantering
             
           </span>
         </div>
@@ -503,18 +505,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -530,7 +534,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             2. Villkor och logik
@@ -544,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/villkorssatser/" class="md-nav__link">
+      <a href="../villkorssatser/" class="md-nav__link">
         
   
   
@@ -567,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/villkor-if/" class="md-nav__link">
+      <a href="../villkor-if/" class="md-nav__link">
         
   
   
@@ -590,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/villkor-switch/" class="md-nav__link">
+      <a href="../villkor-switch/" class="md-nav__link">
         
   
   
@@ -610,10 +614,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../modul-2/felhantering/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Felhantering
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -624,6 +650,119 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feltyper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feltyper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feltyper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kompileringsfel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompileringsfel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exekveringsfel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exekveringsfel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logiska-fel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logiska fel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undantag-med-try-catch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undantag med try-catch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#felsokning-med-debugger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Felsökning med debugger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Felsökning med debugger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steg-for-steg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steg för steg
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breakpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-to-cursor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run to cursor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -636,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/readkey/" class="md-nav__link">
+      <a href="../readkey/" class="md-nav__link">
         
   
   
@@ -659,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/villkorsoperatorn/" class="md-nav__link">
+      <a href="../villkorsoperatorn/" class="md-nav__link">
         
   
   
@@ -682,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/_begrepp02/" class="md-nav__link">
+      <a href="../_begrepp02/" class="md-nav__link">
         
   
   
@@ -705,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/_uppg02/" class="md-nav__link">
+      <a href="../_uppg02/" class="md-nav__link">
         
   
   
@@ -728,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/_l%C3%B6sn02/" class="md-nav__link">
+      <a href="../_l%C3%B6sn02/" class="md-nav__link">
         
   
   
@@ -1487,19 +1626,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../modul-7/monoguide-old/" class="md-nav__link">
         
   
   
@@ -1510,7 +1640,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1535,6 +1664,107 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feltyper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feltyper
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feltyper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kompileringsfel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kompileringsfel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exekveringsfel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exekveringsfel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logiska-fel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logiska fel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undantag-med-try-catch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undantag med try-catch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#felsokning-med-debugger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Felsökning med debugger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Felsökning med debugger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steg-for-steg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steg för steg
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breakpoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-to-cursor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run to cursor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1549,16 +1779,120 @@
 
 
 
-<h1 id="monogame">MonoGame<a class="headerlink" href="#monogame" title="Permanent link">&para;</a></h1>
-<p>Beskrivande flufftext här!</p>
-<p>Modul 7 har ej uppdaterats från pdf. Alltså tittar man på pdf-arna.</p>
-<p><a href="../monoguide-old-pdf/01%20MG%20L%C3%A4gga%20in%20Bild.pdf" target="_blank">1. Lägga in bild</a></p>
-<p><a href="../monoguide-old-pdf/02%20MG%20Storlek%20och%20Rotation.pdf" target="_blank">2. Storlek och rotation</a></p>
-<p><a href="../monoguide-old-pdf/03%20MG%20R%C3%B6relse.pdf" target="_blank">3. Rörelse </a></p>
-<p><a href="../monoguide-old-pdf/04%20MG%20Tangentbord%20och%20Mus.pdf" target="_blank">4. Tangentbord och mus</a></p>
-<p><a href="../monoguide-old-pdf/05%20MG%20Text%20och%20Ljud.pdf" target="_blank">5. Text och ljud</a></p>
-<p><a href="../monoguide-old-pdf/06%20MG%20Enkel%20Kollision.pdf" target="_blank">6. Enkel kollision</a></p>
-<p><a href="../monoguide-old-pdf/07%20MG%20Enkel%20Animering.pdf" target="_blank">7. Enkel animation</a></p>
+<h1 id="felhantering">Felhantering<a class="headerlink" href="#felhantering" title="Permanent link">&para;</a></h1>
+<p>Felhantering är en viktig del av programmering eftersom det hjälper till att skapa robusta och användarvänliga applikationer. </p>
+<p>Genom att förebygga fel redan i planeringsstadiet minskar risken att de inträffar, och höjer användarvänligheten. </p>
+<p>Det är dock också viktigt att kunna hantera fel när de uppstår för att säkerställa att programmet inte kraschar och kan ge användbar feedback till användaren.</p>
+<h2 id="feltyper">Feltyper<a class="headerlink" href="#feltyper" title="Permanent link">&para;</a></h2>
+<p>Det finns tre huvudsakliga typer av fel inom programmering, baserat på vad de har för effekt.</p>
+<h3 id="kompileringsfel">Kompileringsfel<a class="headerlink" href="#kompileringsfel" title="Permanent link">&para;</a></h3>
+<p>Kompileringsfel uppstår när koden bryter mot språkets syntaxregler och kan inte kompileras. </p>
+<p>Dessa fel upptäcks av kompilatorn innan programmet körs, vilket leder till att programmet inte startar.</p>
+<p>Visual Studio hjälper till att hitta dessa genom att markera dem med rött.
+<div class="highlight"><pre><span></span><code><span class="c1">// Kompileringsfel, kan inte konvertera string till int rakt av</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">myInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hej&quot;</span><span class="p">;</span>
+</code></pre></div></p>
+<h3 id="exekveringsfel">Exekveringsfel<a class="headerlink" href="#exekveringsfel" title="Permanent link">&para;</a></h3>
+<p>Exekveringsfel (runtime errors) uppstår under programmets körning, och leder till att programmet "slutar exekvera", alltså krascha. </p>
+<p>I C# kallas dessa för undantag (exceptions), och om ett undantag inte hanteras så kraschar programmet.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Ger upphov till ett exekveringsfel för det blir nolldivision</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</code></pre></div>
+<p>Ovanstående exempel ger upphov till ett felmeddelande som kommunicerar "Exception unhandled" följt av namnet på undantaget med tillhörande förklaring vad som orsakade det, i det här fallet: "System.DivideByZeroException: 'Attempted to divide by zero."</p>
+<h3 id="logiska-fel">Logiska fel<a class="headerlink" href="#logiska-fel" title="Permanent link">&para;</a></h3>
+<p>Logiska fel är ofta den största fienden. Programmet kompilerar och startar upp, det kraschar inte, men om man frågar vilken färg himlen har så svarar programmet "bacon". Inte helt önskvärt.</p>
+<p>Följande kod är ett exempel på ett program som ska summera a och b.
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// Logiskt fel, fel operator, - istället för +</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Summan av {a} och {b} är {sum}&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+<p>Logiska fel kan vara svåra att upptäcka, dels för att man själv får tunnelseende, men också när programmet blir större och större.</p>
+<p>Följande kod är ett exempel på ett program som räknar antalet vokaler i en sträng som användaren skriver in.
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">input</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;e&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;i&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;o&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;u&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;å&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;ä&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;ö&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Antalet vokaler i strängen &#39;{input}&#39; är: {count}&quot;</span><span class="p">);</span>
+</code></pre></div>
+Skriver man in "Äntligen får jag programmera!" i ovanstående exempel får man utskriften:
+<div class="highlight"><pre><span></span><code>Antalet vokaler i strängen &quot;Äntligen får jag programmera!&quot; är: 8
+</code></pre></div></p>
+<p>Programmet missar alltså en vokal. Mer specifikt så räknar programmet inte versala vokaler (stora bokstäver), i det här fallet "Ä".</p>
+<p>Det här hade varit svårare att se eller komma på om man inte testat programmet och belyser vikten av att testköra sina program.</p>
+<hr />
+<h2 id="undantag-med-try-catch">Undantag med try-catch<a class="headerlink" href="#undantag-med-try-catch" title="Permanent link">&para;</a></h2>
+<p>Exekveringsfel i C# ger upphov till så kallade undantag. Dessa hanteras såklart bäst genom att helt undvika dem via förebyggande arbete, exempelvis kanske använda TryParse() istället för Parse().</p>
+<p>Ett annat sätt att hantera undantag och undvika att programmet kraschar är att använda en lite mer allmän lösning, try-catch. </p>
+<p>Följande exempel ger upphov till ett exekveringsfel, System.FormatException, eftersom det inte går att konvertera text till heltal.
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">myInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;Hej&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+<p>Användande av try-catch låter programmet "försöka" utföra koden, och sen agera om något undantag dyker upp. Ett try-block måste matchas ihop med minst ett catch-block.
+<div class="highlight"><pre><span></span><code><span class="k">try</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Försöker köra koden inne i try-blocket</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">myInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;Hej&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">catch</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Om något går fel utförs koden i catch-blocket.</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Nåt gick fel!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Ovanstående exempel ger dock ingen information till användaren, ett sätt att åstadkomma det är att använda det faktiska undantaget som ett argument i catch-blocket, i nedanstående exempel namnges undantaget till error.
+<div class="highlight"><pre><span></span><code><span class="k">try</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">myInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;Hej&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="c1">// Undantaget namnges till error</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Nåt gick fel!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span><span class="w"> </span><span class="c1">// Skriv ut det inbyggda meddelandet</span>
+<span class="p">}</span>
+</code></pre></div>
+Ovanstående kod ger en utskrift innehållande undantagets eget felmeddelande:
+<div class="highlight"><pre><span></span><code>Nåt gick fel!
+Input string was not in a correct format.
+</code></pre></div></p>
+<p>Det går också att "fånga" specifika fel med catch-block, då specificerar man vilken typ av undantag som ska fångas. På så vis kan man låta programmet hantera olika undantag på olika sätt.
+<div class="highlight"><pre><span></span><code><span class="k">try</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Försöker omvandla en sträng till integer.</span>
+<span class="w">    </span><span class="c1">// Talet ifråga är dock för stort för en int32.</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">myInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="s">&quot;99999999999999999999999&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">FormatException</span><span class="p">)</span><span class="w"> </span><span class="c1">//Det här blocket händer ENBART vid fel format.</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Fel format!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">catch</span><span class="w"> </span><span class="c1">//Alla andra fel.</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Något annat oklart hände!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<hr />
+<h2 id="felsokning-med-debugger">Felsökning med debugger<a class="headerlink" href="#felsokning-med-debugger" title="Permanent link">&para;</a></h2>
+<p>Att felsöka logiska fel kan vara jobbigt, man vet kanske inte vad som är problemet eller var i källkoden sagda problem befinner sig.</p>
+<p>Ett sätt att underlätta felsökningsprocessen är att använda sig av Visual Studios debugger och gå igenom koden steg för steg, eller pausa exekveringen vid en viss rad där man misstänker att problemet finns,</p>
+<h3 id="steg-for-steg">Steg för steg<a class="headerlink" href="#steg-for-steg" title="Permanent link">&para;</a></h3>
+<p>För att gå igenom koden steg för steg används knappen "Step into" (F11). Ser du inte knappen, högerklicka och visa verktygsfältet "Debug".</p>
+<p>Programmet startar och första i källkoden markeras, härifrån kan man gå framåt i programmet genom att trycka på "Step Into" (F11) igen, ett tryck innebär en rad framåt. </p>
+<p>Det finns också möjlighet att se värdet på alla variabler via fliken "Locals", nere till vänster från början.</p>
+<h3 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link">&para;</a></h3>
+<p>Lek med tanken att ditt program är 300 rader kod. Du misstänker att problemet finns någonstans runt rad 250. Du skulle kunna klicka på "Step Into" (F11) 250 gånger för att komma dit, men det vill du inte.</p>
+<p>En breakpoint kan sättas på en specifik rad i källkoden och fungerar precis som namnet antyder, när programmet kommer till raden ifråga så kommer programmet att pausa och gå in i debug läge.</p>
+<p>För att sätta ut en breakpoint kan man vänsterklicka längst ut till vänster om radnumret. Alternativt kan man använda F9 när markören är på raden ifråga. Funktionaliteten kan också kommas åt från dropdownen "Debug" högst upp.</p>
+<p>Det går utmärkt att sätta ut fler breakpoints.</p>
+<h3 id="run-to-cursor">Run to cursor<a class="headerlink" href="#run-to-cursor" title="Permanent link">&para;</a></h3>
+<p>Fungerar som en breakpoint, men bara en gång. Högerklicka på raden du vill köra till, välj "Run To Cursor", programmet kör som vanligt till raden ifråga och går sen in i debug så att du kan undersöka. </p>
 
 
 
@@ -1594,7 +1928,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Sidfot" >
         
           
-          <a href="../../modul-6/_l%C3%B6sn06/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: Lösningar">
+          <a href="../villkor-switch/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: Switch">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -1604,11 +1938,27 @@
                 Föregående
               </span>
               <div class="md-ellipsis">
-                Lösningar
+                Switch
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../readkey/" class="md-footer__link md-footer__link--next" aria-label="Nästa: ReadKey">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Nästa
+              </span>
+              <div class="md-ellipsis">
+                ReadKey
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

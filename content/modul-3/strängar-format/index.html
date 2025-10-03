@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../../modul-6/_l%C3%B6sn06/">
+        <link rel="prev" href="../repetitionssatser/">
       
+      
+        <link rel="next" href="../filhantering/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>7. MonoGame - Programmering 1</title>
+        <title>Strängarhantering och formatering - Programmering 1</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monogame" class="md-skip">
+        <a href="#stranghantering-och-formatering" class="md-skip">
           Gå till innehållet
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. MonoGame
+              Strängarhantering och formatering
             
           </span>
         </div>
@@ -755,18 +757,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -782,7 +786,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             3. Upprepning och data
@@ -796,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-3/repetitionssatser/" class="md-nav__link">
+      <a href="../repetitionssatser/" class="md-nav__link">
         
   
   
@@ -816,10 +820,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../modul-3/str%C3%A4ngar-format/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Strängarhantering och formatering
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -830,6 +856,152 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Innehållsförteckning">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#strangar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strängar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialtecken-i-strangar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specialtecken i strängar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialtecken i strängar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escape sequences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpolated-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolated strings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verbatim-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verbatim strings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hantering-av-strangar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hantering av strängar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hantering av strängar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterera-over-strang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterera över sträng
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#separera-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Separera information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hoger-och-vansterjustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Höger -och vänsterjustering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -842,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-3/filhantering/" class="md-nav__link">
+      <a href="../filhantering/" class="md-nav__link">
         
   
   
@@ -865,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-3/alg-pseudo-aktdiag/" class="md-nav__link">
+      <a href="../alg-pseudo-aktdiag/" class="md-nav__link">
         
   
   
@@ -888,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-3/_begrepp03/" class="md-nav__link">
+      <a href="../_begrepp03/" class="md-nav__link">
         
   
   
@@ -911,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-3/_uppg03/" class="md-nav__link">
+      <a href="../_uppg03/" class="md-nav__link">
         
   
   
@@ -934,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-3/_l%C3%B6sn03/" class="md-nav__link">
+      <a href="../_l%C3%B6sn03/" class="md-nav__link">
         
   
   
@@ -1487,19 +1659,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../modul-7/monoguide-old/" class="md-nav__link">
         
   
   
@@ -1510,7 +1673,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1535,6 +1697,140 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Innehållsförteckning
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#strangar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strängar
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specialtecken-i-strangar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specialtecken i strängar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specialtecken i strängar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escape sequences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpolated-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpolated strings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verbatim-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verbatim strings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hantering-av-strangar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hantering av strängar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hantering av strängar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterera-over-strang" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterera över sträng
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#separera-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Separera information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hoger-och-vansterjustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Höger -och vänsterjustering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1549,16 +1845,143 @@
 
 
 
-<h1 id="monogame">MonoGame<a class="headerlink" href="#monogame" title="Permanent link">&para;</a></h1>
-<p>Beskrivande flufftext här!</p>
-<p>Modul 7 har ej uppdaterats från pdf. Alltså tittar man på pdf-arna.</p>
-<p><a href="../monoguide-old-pdf/01%20MG%20L%C3%A4gga%20in%20Bild.pdf" target="_blank">1. Lägga in bild</a></p>
-<p><a href="../monoguide-old-pdf/02%20MG%20Storlek%20och%20Rotation.pdf" target="_blank">2. Storlek och rotation</a></p>
-<p><a href="../monoguide-old-pdf/03%20MG%20R%C3%B6relse.pdf" target="_blank">3. Rörelse </a></p>
-<p><a href="../monoguide-old-pdf/04%20MG%20Tangentbord%20och%20Mus.pdf" target="_blank">4. Tangentbord och mus</a></p>
-<p><a href="../monoguide-old-pdf/05%20MG%20Text%20och%20Ljud.pdf" target="_blank">5. Text och ljud</a></p>
-<p><a href="../monoguide-old-pdf/06%20MG%20Enkel%20Kollision.pdf" target="_blank">6. Enkel kollision</a></p>
-<p><a href="../monoguide-old-pdf/07%20MG%20Enkel%20Animering.pdf" target="_blank">7. Enkel animation</a></p>
+<h1 id="stranghantering-och-formatering">Stränghantering och formatering<a class="headerlink" href="#stranghantering-och-formatering" title="Permanent link">&para;</a></h1>
+<h2 id="strangar">Strängar<a class="headerlink" href="#strangar" title="Permanent link">&para;</a></h2>
+<p>I C# är en sträng en sekvens av tecken (char). Dessa kan manipuleras på olika sätt, exempelvis komma åt enskilda tecken, plocka isär och sätta ihop strängar och formatera dem på olika sätt.</p>
+<p>Enskilda tecken i strängar kan kommas åt via tecknets <strong>index</strong>. Index är ett sätt att hålla koll på element i samlingar, och kommer användas i andra sammanhang än strängar också. Index börjar alltid på 0, så en sträng med 6 tecken kommer ha index från och med 0 till och med 5.
+<div class="highlight"><pre><span></span><code><span class="c1">// Index:      012345 </span>
+<span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hejsan&quot;</span><span class="p">;</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">tecken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span><span class="w"> </span><span class="c1">// Tilldela värdet från index 2 till variabeln tecken</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">tecken</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ger utskriften j.</span>
+</code></pre></div></p>
+<p>Man kan också specificera intervall för vilka tecken som ska kommas åt med följande syntax. Notera att den första indexangivelsen ingår i intervallet, men inte den andra, exempelvis från och med 2 till 4.
+<div class="highlight"><pre><span></span><code><span class="c1">// Index:      012345 </span>
+<span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hejsan&quot;</span><span class="p">;</span>
+
+<span class="c1">// Från och med 2, till 4, dvs index 2 och 3</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">2</span><span class="p">.</span><span class="mf">.4</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Ger utskriften: js</span>
+
+<span class="c1">// Från start till 2, dvs index 0 och 1.</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">[.</span><span class="mf">.2</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Ger utskriften: He</span>
+
+<span class="c1">// Från och med 3 till slutet, dvs index 3, 4 och 5</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="mi">3</span><span class="p">..]);</span><span class="w"> </span><span class="c1">// Ger utskriften: san</span>
+</code></pre></div></p>
+<hr />
+<h2 id="specialtecken-i-strangar">Specialtecken i strängar<a class="headerlink" href="#specialtecken-i-strangar" title="Permanent link">&para;</a></h2>
+<h3 id="escape-sequences">Escape sequences<a class="headerlink" href="#escape-sequences" title="Permanent link">&para;</a></h3>
+<p>Teckenkombinationer bestående av backslash <code>\</code> följt av något annat tecken kallas "escape sequences", i brist på bra översättning. </p>
+<p>Kan användas för att skriva ut specialtecken såsom citattecken och backslash, som annars inte kan skrivas ut i text eftersom de har en egen funktion i strängar.
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Backslash: \\&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ger utskrift: Backslash: \</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Citattecken: \&quot;&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ger utskrift: Citattecken: &quot;</span>
+</code></pre></div></p>
+<p>Det finns en del olika escape sequences, några exempel är:
+<code>\n</code> för ny rad, <code>\t</code> för tab och <code>\b</code> för backspace.</p>
+<h3 id="interpolated-strings">Interpolated strings<a class="headerlink" href="#interpolated-strings" title="Permanent link">&para;</a></h3>
+<p>Stränginterpolering, aningen oklar gällande svenskt begrepp här. En interpolerad sträng är en sträng som kan innehålla variabeluttryck. Tidigare kunde detta genomföras via "string composite formatting", som har markant lägre läsbarhet.</p>
+<p>För att göra en interpolerad sträng sätts <code>$</code> framför strängen. Variabler kan sedan användas inne i strängen inkapslade i klammerparenteser {}.
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Arne&quot;</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">99</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Hej {name}, du är {age} år gammal!&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+<h3 id="verbatim-strings">Verbatim strings<a class="headerlink" href="#verbatim-strings" title="Permanent link">&para;</a></h3>
+<p>Verbatim översätts till ordagrant. Det här är en metod för att få kompilatorn att tolka strängen ordagrant, precis som det står. För att uppnå detta sätts @ framför strängen. Notera att det här motverkar eventuella escape sequences såsom <code>\n</code> som redan finns i strängen.
+<div class="highlight"><pre><span></span><code><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hej \n på dig.&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ger en utskrift på två rader.</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">@&quot;Hej \npå dig.&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Ger utskriften: Hej \npå dig.</span>
+</code></pre></div></p>
+<hr />
+<h2 id="hantering-av-strangar">Hantering av strängar<a class="headerlink" href="#hantering-av-strangar" title="Permanent link">&para;</a></h2>
+<h3 id="iterera-over-strang">Iterera över sträng<a class="headerlink" href="#iterera-over-strang" title="Permanent link">&para;</a></h3>
+<p>För att hantera strängar och deras innehåll kan man ha nytta av att gå igenom strängen och leta efter specifika tecken, exempelvis ett program som ska räkna hur många bokstäver av samma typ det finns i en sträng.
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Arne Bengtsson&quot;</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Iterera över strängen, A, r, n osv</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;e&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="metoder">Metoder<a class="headerlink" href="#metoder" title="Permanent link">&para;</a></h3>
+<p>Det finns en uppsjö av metoder som kan vara behjälpliga vid hantering av strängar, ett urval av dessa presenteras nedan:</p>
+<!-- Replace() Alt ToArray() och sen ändra -->
+
+<ul>
+<li>Replace()</li>
+<li>Contains()</li>
+<li>EndsWith()</li>
+<li>StartsWith()</li>
+<li>Equals()</li>
+<li>IndexOf()</li>
+<li>ToUpper()</li>
+<li>ToLower()</li>
+<li>Insert()</li>
+<li>Remove()</li>
+<li>SubString()</li>
+<li>length &larr; en property (egenskap), så ingen parentes</li>
+</ul>
+<p>Exempelvis kan Contains() användas för att undersöka om ett visst tecken finns i en sträng.
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Det här är min text!&quot;</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&quot;n&quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// Ger utskriften True</span>
+</code></pre></div></p>
+<h3 id="separera-information">Separera information<a class="headerlink" href="#separera-information" title="Permanent link">&para;</a></h3>
+<p>Ibland kan det föreligga behov av att dela upp information som användaren har skrivit, exempelvis om användaren skrivit både för och efternamn i en sträng, och denna information ska sparas i programmet i två separata variabler. </p>
+<p>Ett sätt att åstadkomma det med hjälp av metoderna IndexOf() och SubString() presenteras nedan.
+<div class="highlight"><pre><span></span><code><span class="kt">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Arne Bengtsson&quot;</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">indexSpace</span><span class="p">;</span>
+
+<span class="c1">// Hitta index för mellanslaget</span>
+<span class="n">indexSpace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="sc">&#39; &#39;</span><span class="p">);</span>
+
+<span class="c1">// Gör nya strängar </span>
+<span class="kt">string</span><span class="w"> </span><span class="n">firstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">indexSpace</span><span class="p">);</span>
+<span class="kt">string</span><span class="w"> </span><span class="n">lastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="n">indexSpace</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div></p>
+<hr />
+<h2 id="formatering">Formatering<a class="headerlink" href="#formatering" title="Permanent link">&para;</a></h2>
+<h3 id="tal">Tal<a class="headerlink" href="#tal" title="Permanent link">&para;</a></h3>
+<p>I interpolerade strängar kan man formatera värdena, genom att skriva ett kolon och sen en formatkod enligt följande: 
+<div class="highlight"><pre><span></span><code>{variabel:formatkod}
+</code></pre></div></p>
+<p>Det finns flertalet olika formatkoder, några relevanta exempel är: </p>
+<ul>
+<li>F (fixed-point), heltal/decimaltal med givet antal decimaler</li>
+<li>N (Number), tusentalsavgränsare och givet antal decimaler</li>
+<li>E (Exponential), grundpotensform med givet antal decimaler</li>
+<li>P (Procent), procentandel med givet antal decimaler</li>
+<li>C (Valuta), valuta med givet antal decimaler</li>
+</ul>
+<p>Saker som vilken enhet valutan har och vilken tusentalsavgränsare som används är beroende på operativsystemets inställningar. Det givna antalet decimaler innebär en avrundning.</p>
+<p>Exempelvis kan man avrunda tal med många decimaler, eller skriva stora tal tydligare. Notera att formatkoden inte är skiftlägeskänslig, och kan skrivas antingen med stor eller liten bokstav.
+<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">pi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.1415926535</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123456789</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Formatet f3 ger: {pi:f3}&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// 3,142</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Formatet n0 ger: {num:n0}&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// 123 456 789</span>
+</code></pre></div></p>
+<h3 id="hoger-och-vansterjustering">Höger -och vänsterjustering<a class="headerlink" href="#hoger-och-vansterjustering" title="Permanent link">&para;</a></h3>
+<p>Det går att ange vilken bredd man vill att en interpolerad sträng ska ta upp, och ange om texten ska vara justerad åt något håll. Det här kan vara användbart om man vill skriva ut information i tabeller. Notera att -10 innebär att strängen totalt ska ta upp 10 tecken, och vara justerad åt vänster. 
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">num1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">23</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">num2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">19</span><span class="p">;</span>
+
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;|{num1,-10}|&quot;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;|{num2, 10}|&quot;</span><span class="p">);</span>
+<span class="cm">/* Ger utskriften:</span>
+<span class="cm">|23        |</span>
+<span class="cm">|        19|</span>
+<span class="cm">*/</span>
+</code></pre></div></p>
+<p>Positionsjustering kan kombineras med formateringen. Exemplet nedan avrundar värdet till 2 decimaler, samt högerjusterar över 6 teckens bredd.
+<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">temperatur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12.345</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Högerjusterat: {temperatur,6:f2}&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+<p>https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings</p>
 
 
 
@@ -1594,7 +2017,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Sidfot" >
         
           
-          <a href="../../modul-6/_l%C3%B6sn06/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: Lösningar">
+          <a href="../repetitionssatser/" class="md-footer__link md-footer__link--prev" aria-label="Föregående: Repetitionssatser">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
@@ -1604,11 +2027,27 @@
                 Föregående
               </span>
               <div class="md-ellipsis">
-                Lösningar
+                Repetitionssatser
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../filhantering/" class="md-footer__link md-footer__link--next" aria-label="Nästa: Filhantering">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Nästa
+              </span>
+              <div class="md-ellipsis">
+                Filhantering
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
