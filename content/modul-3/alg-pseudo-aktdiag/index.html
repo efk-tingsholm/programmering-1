@@ -48,6 +48,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/print.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1695,11 +1697,13 @@ Sluta
 <p>Aktivitetsdiagram är en typ av flödesschema som  kan användas för att både planera men också visualisera logiken i ett program. </p>
 <p>Nedan presenteras ett aktivitetsdiagram för ”Gissa Talet”. Datorn slumpar fram ett tal, t.ex. mellan 1 – 100. Användaren ska på så få gissningar som möjligt gissa vilket tal datorn slumpat fram. För varje gissning användaren gör svarar datorn antingen: du gissade för lågt, du gissade för högt eller du gissade rätt. Om gissningen inte är korrekt ska användaren göra en ny gissning och det ska upprepas tills användaren gissat rätt.</p>
 <p><img alt="Aktivitetsdiagram för &quot;gissa talet&quot;." src="../img/aktivitetsdiagram1.webp" /></p>
-<p>Notera att olika symboler har olika betydelse. 
-- Rektangel med rundade hörn för start respektive stopp av program.
-- Vanlig rektangel för vanlig sekvens av kod.
-- Romben motsvarar en selektion, if eller switch.
-- Pilarna tillbaka till sekvensen "Gissa talet" representerar en iteration, loop.</p>
+<p>Notera att olika symboler har olika betydelse. </p>
+<ul>
+<li>Rektangel med rundade hörn för start respektive stopp av program.</li>
+<li>Vanlig rektangel för vanlig sekvens av kod.</li>
+<li>Romben motsvarar en selektion, if eller switch.</li>
+<li>Pilarna tillbaka till sekvensen "Gissa talet" representerar en iteration, loop.</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tips</p>
 <p>Ett aktivitetsdiagram, som är en typ av flödesschema, är ett formellt sätt att beskriva en algoritm och den kan direkt översättas till källkod eftersom den består av symboler som direkt kan översättas till källkod.</p>
