@@ -67,6 +67,7 @@ Nedan presenteras ett aktivitetsdiagram för ”Gissa Talet”. Datorn slumpar f
 
 
 Notera att olika symboler har olika betydelse. 
+
 - Rektangel med rundade hörn för start respektive stopp av program.
 - Vanlig rektangel för vanlig sekvens av kod.
 - Romben motsvarar en selektion, if eller switch.

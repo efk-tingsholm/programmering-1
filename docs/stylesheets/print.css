@@ -1,0 +1,71 @@
+/* Gäller bara vid utskrift (Ctrl+P / Spara som PDF) */
+@media print {
+
+  /* 1) Sidbryt före H2 (men inte före första H2 på sidan) */
+  /* nyare standard */
+  /* fallback för äldre motorer */     
+  /* .md-typeset h2:not(:first-of-type) {
+    break-before: page;   
+    page-break-before: always;  
+  } */
+
+  /* 2) Sidbryt före horisontella linjer (--- i Markdown => <hr>) */
+  /* .md-typeset hr {
+    break-before: page;
+    page-break-before: always;
+  } */
+
+  /* 3) Håll ihop kodblock, tabeller och admonitions så de inte delas mitt i */
+  .md-typeset pre,
+  .md-typeset .highlight,
+  .md-typeset table,
+  .md-typeset .admonition,
+  .md-typeset details {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 4) (Valfritt) Minimera “ensamma rader” över sidbrytningar */
+  .md-typeset p,
+  .md-typeset li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* 5) (Valfritt) Lite tightare marginaler i utskrift */
+  @page {
+    margin: 16mm;
+  }
+}
+
+@media print {
+
+  /* 1) Låt inte en rubrik hamna längst ned utan sitt första innehåll */
+  .md-typeset h2,
+  .md-typeset h3 {
+    break-after: avoid;            /* nyare standard */
+    page-break-after: avoid;       /* fallback */
+  }
+
+  /* 2) Låt inte det FÖRSTA elementet efter rubriken börja på ny sida */
+  .md-typeset h2 + *,
+  .md-typeset h3 + * {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  /* 3) Kodblock, tabeller, admonitions ska inte delas mitt i */
+  .md-typeset pre,
+  .md-typeset .highlight,
+  .md-typeset table,
+  .md-typeset .admonition,
+  .md-typeset details {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* (valfritt) Minska fula ensamrader i löptext/listor */
+  .md-typeset p,
+  .md-typeset li { orphans: 3; widows: 3; }
+}
+

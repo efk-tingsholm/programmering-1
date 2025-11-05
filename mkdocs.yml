@@ -46,6 +46,7 @@ theme:
 # ---EXTRA CSS---
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/print.css
 
   
 # ---NAVIGATION---
