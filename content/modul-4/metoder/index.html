@@ -1700,10 +1700,12 @@
 <span class="w">    </span><span class="c1">// Här skrivs all kod som utförs i metoden</span>
 <span class="p">}</span>
 </code></pre></div>
-Metoddeklarationen består av tre delar delar, som kan ses ovan
-- static - modifierare som avgör hur metoden kan anropas, används för att kunna använda metoden direkt.
-- void - metodens returtyp, void betyder att metoden inte returnerar något.
-- MinMetod() - metodens namn, namnge metoden beskrivande, och använd PascalCase.</p>
+Metoddeklarationen består av tre delar delar, som kan ses ovan:</p>
+<ul>
+<li>static - modifierare som avgör hur metoden kan anropas, används för att kunna använda metoden direkt.</li>
+<li>void - metodens returtyp, void betyder att metoden inte returnerar något.</li>
+<li>MinMetod() - metodens namn, namnge metoden beskrivande, och använd PascalCase.</li>
+</ul>
 <p>Det är också värt att notera att av organisatoriska skäl placeras metoder utanför Main()-metoden, ovanför eller under, spelar ingen roll.
 <div class="highlight"><pre><span></span><code><span class="k">namespace</span><span class="w"> </span><span class="nn">test</span>
 <span class="p">{</span>
@@ -1722,6 +1724,11 @@ Metoddeklarationen består av tre delar delar, som kan ses ovan
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Det går att lägga metoder intui andra metoder, t.ex. Main() eller annan metod du själv definierat. I sådana situationer kallas de istället <em>lokala funktioner</em> (local functions) och Microsoft har en <a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions" target="_blank">hel artikel</a> dedikerad till dem.</p>
+</div>
+<hr />
 <h2 id="metodanrop">Metodanrop<a class="headerlink" href="#metodanrop" title="Permanent link">&para;</a></h2>
 <p>Metoder anropas genom att skriva deras namn, exempelvis i Main()-metoden. Notera att koden fortfarande exekveras uppifrån och ned, men när raden med metoden nås så körs hela metoden innan programmet fortsätter nedåt.
 <div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
@@ -1780,6 +1787,7 @@ Detta innebär en förändring när metoden anropas.
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Metodens returvärde kan sparas i en variabel.</span>
 <span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">summa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AdderaTvåTal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">);</span>
+
 <span class="w">    </span><span class="c1">// Metoden kan också användas direkt för sitt returvärde.</span>
 <span class="w">    </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">AdderaTvåTal</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">));</span><span class="w"> </span><span class="c1">// Utskrift: 15</span>
 <span class="p">}</span>
@@ -1789,6 +1797,7 @@ Detta innebär en förändring när metoden anropas.
 <p>Vissa metoder kan anropas på olika sätt. Exempelvis kan metoden Beep() från klassen Console anropas antingen helt utan argument, eller genom att ange både frekvens och varaktighet.
 <div class="highlight"><pre><span></span><code><span class="c1">// Beep() anropas utan argument, går bra.</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">Beep</span><span class="p">();</span>
+
 <span class="c1">// Beep() anropas med argumenten 700 och 2000, </span>
 <span class="c1">// för parametrarna frekvens och varaktighet. Går också bra.</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">Beep</span><span class="p">(</span><span class="mi">700</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">);</span>
@@ -1818,7 +1827,8 @@ Detta innebär en förändring när metoden anropas.
 </code></pre></div></p>
 <hr />
 <h2 id="rekursiva-metoder">Rekursiva metoder<a class="headerlink" href="#rekursiva-metoder" title="Permanent link">&para;</a></h2>
-<p>Rekursiva metoder är ett tjusigt sätt att beskriva metoder som anropar sig själva. Sådana metoder måste ha ett basfall, så att de inte anropar sig själva i all evighet, på samma sätt som man inte vill fastna i oändliga loopar.
+<p>Rekursiva metoder är ett tjusigt sätt att beskriva metoder som anropar sig själva. Sådana metoder måste ha ett basfall, så att de inte anropar sig själva i all evighet, på samma sätt som man inte vill fastna i oändliga loopar.</p>
+<p>Följande metod räknar ned från ett givet heltal och skriver ut nedräkningen till användaren.
 <div class="highlight"><pre><span></span><code><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Countdown</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">    </span><span class="c1">// Skriv alltid ut vilket nummer vi är på</span>
@@ -1836,7 +1846,7 @@ Detta innebär en förändring när metoden anropas.
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-När metoden "Countdown()" från exemplet ovanför anropas fås följande utskrift.
+När metoden "Countdown()" från exemplet ovanför anropas med argumentet 4 fås följande utskrift.
 <div class="highlight"><pre><span></span><code>4
 3
 2
@@ -1846,7 +1856,7 @@ Klar!
 </code></pre></div></p>
 <div class="admonition tip">
 <p class="admonition-title">Tips</p>
-<p>Rekursiva metoder tas upp i den här kursen främst i orienteringssyfte, man förväntas förstå konceptet, men inte nödvändigtvis använda dem på en högre nivå än det givna exemplet ovan.</p>
+<p>Rekursiva metoder tas upp i den här kursen främst i orienteringssyfte, man förväntas förstå konceptet, men inte nödvändigtvis använda dem på en högre nivå än i exemplet ovan.</p>
 </div>
 
 
