@@ -21,7 +21,8 @@ static void MinMetod()
     // Här skrivs all kod som utförs i metoden
 }
 ```
-Metoddeklarationen består av tre delar delar, som kan ses ovan
+Metoddeklarationen består av tre delar delar, som kan ses ovan:
+
 - static - modifierare som avgör hur metoden kan anropas, används för att kunna använda metoden direkt.
 - void - metodens returtyp, void betyder att metoden inte returnerar något.
 - MinMetod() - metodens namn, namnge metoden beskrivande, och använd PascalCase.
@@ -46,6 +47,14 @@ namespace test
     }
 }
 ```
+
+!!! info "Info"
+    Det går att lägga metoder intui andra metoder, t.ex. Main() eller annan metod du själv definierat. I sådana situationer kallas de istället *lokala funktioner* (local functions) och Microsoft har en [hel artikel](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions){:target="_blank"} dedikerad till dem.
+
+    
+
+---
+
 
 ## Metodanrop
 Metoder anropas genom att skriva deras namn, exempelvis i Main()-metoden. Notera att koden fortfarande exekveras uppifrån och ned, men när raden med metoden nås så körs hela metoden innan programmet fortsätter nedåt.
@@ -120,6 +129,7 @@ static void Main(string[] args)
 {
 	// Metodens returvärde kan sparas i en variabel.
 	int summa = AdderaTvåTal(10, 20);
+
 	// Metoden kan också användas direkt för sitt returvärde.
 	Console.WriteLine(AdderaTvåTal(5, 10)); // Utskrift: 15
 }
@@ -132,6 +142,7 @@ Vissa metoder kan anropas på olika sätt. Exempelvis kan metoden Beep() från k
 ```csharp
 // Beep() anropas utan argument, går bra.
 Console.Beep();
+
 // Beep() anropas med argumenten 700 och 2000, 
 // för parametrarna frekvens och varaktighet. Går också bra.
 Console.Beep(700, 2000);
@@ -170,6 +181,8 @@ static void Main(string[] args)
 
 ## Rekursiva metoder
 Rekursiva metoder är ett tjusigt sätt att beskriva metoder som anropar sig själva. Sådana metoder måste ha ett basfall, så att de inte anropar sig själva i all evighet, på samma sätt som man inte vill fastna i oändliga loopar.
+
+Följande metod räknar ned från ett givet heltal och skriver ut nedräkningen till användaren.
 ```csharp
 static void Countdown(int number)
 {
@@ -188,7 +201,7 @@ static void Countdown(int number)
     }
 }
 ```
-När metoden "Countdown()" från exemplet ovanför anropas fås följande utskrift.
+När metoden "Countdown()" från exemplet ovanför anropas med argumentet 4 fås följande utskrift.
 ```
 4
 3
@@ -200,5 +213,5 @@ Klar!
 
 
 !!! tip "Tips"
-    Rekursiva metoder tas upp i den här kursen främst i orienteringssyfte, man förväntas förstå konceptet, men inte nödvändigtvis använda dem på en högre nivå än det givna exemplet ovan.
+    Rekursiva metoder tas upp i den här kursen främst i orienteringssyfte, man förväntas förstå konceptet, men inte nödvändigtvis använda dem på en högre nivå än i exemplet ovan.
 
