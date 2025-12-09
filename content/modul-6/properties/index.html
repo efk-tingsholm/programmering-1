@@ -548,29 +548,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../modul-2/villkorssatser/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Villkorssatser
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../modul-2/villkor-if/" class="md-nav__link">
         
   
@@ -1778,7 +1755,10 @@
 <span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Hastighet</span><span class="w"> </span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// När värdet från fältet &quot;hastighet&quot; ska hämtas och sen användas till något.</span>
-<span class="w">        </span><span class="k">get</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="k">get</span><span class="w"> </span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">hastighet</span><span class="p">;</span><span class="w"> </span>
+<span class="w">        </span><span class="p">}</span>
 
 <span class="w">        </span><span class="c1">// När annan del av programmet försöker ändra värdet i &quot;hastighet&quot;.</span>
 <span class="w">        </span><span class="k">set</span><span class="w"> </span>
@@ -1800,8 +1780,8 @@
 <li><strong>Inkapsling och kontroll</strong> – ser till att värden alltid sätts och hämtas enligt de regler vi definierat.</li>
 <li><strong>Inbyggd validering</strong> – istället för att skapa en separat metod för att validera data, kan det göras direkt i <code>set</code>-blocket.</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Tips</p>
+<div class="admonition warning">
+<p class="admonition-title">Erkännande</p>
 <p>Ja, jag förstår att att det inte är mer läsbart första gången man ser det... </p>
 </div>
 <h3 id="anvandning">Användning<a class="headerlink" href="#anvandning" title="Permanent link">&para;</a></h3>
