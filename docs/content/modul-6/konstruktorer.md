@@ -1,8 +1,8 @@
 # Konstruktorer
 
-ATT GÖRA: Den här är kaos, ej fixad.
+ATT GÖRA: Den här är inte helt kaos längre, går att använda.
 
-## Vad är en konstruktor?
+## Vad är en Konstruktor?
 
 En **konstruktor** är en speciell metod i en klass som anropas automatiskt när ett objekt skapas. Dess huvudsakliga syfte är att **sätta startvärden** för objektets variabler och säkerställa att objektet är i ett giltigt tillstånd direkt vid skapandet.
 
@@ -53,7 +53,11 @@ I många fall vill vi dock förhindra att objekt skapas utan vissa viktiga värd
 
 En **konstruktor** är en speciell metod i en klass som anropas automatiskt när ett objekt skapas. Dess huvudsakliga syfte är att sätta startvärden för objektets variabler och säkerställa att objektet är i ett giltigt tillstånd direkt vid skapandet.
 
-### Utan konstruktor
+
+---
+
+
+## Utan konstruktor
 Utan en konstruktor måste varje objekt initialiseras manuellt:
 ```csharp
 class Bil
@@ -85,7 +89,7 @@ class Program
 
 
 
-### Med konstruktor
+## Med konstruktor
 
 När en konstruktor har parametrar som har samma namn som klassens fält används **`this`** för att skilja dem åt. `this` refererar till klassens egna variabler och gör att vi kan tilldela fält rätt värden utan att det blir otydligt.
 
@@ -114,14 +118,20 @@ class Program
 }
 ```
 
+!!! tip "Tips"
+    Om parametrarna har andra namn än fälten, t.ex. `hastighetIn` istället för `hastighet`, behövs inte `this`. Men det är en vanlig praxis att använda `this` när parametern har samma namn som fältet, för att hålla koden tydlig och konsekvent.
 
-> [!tip] **Tips**
-> Om parametrarna har andra namn än fälten, t.ex. `hastighetIn` istället för `hastighet`, behövs inte `this`. Men det är en vanlig praxis att använda `this` när parametern har samma namn som fältet, för att hålla koden tydlig och konsekvent.
 
-> [!summary] **Sammanfattning**
-> - En konstruktor anropas automatiskt när ett objekt skapas.
-> - Den används för att ge objektet **startvärden** direkt vid skapandet.
-> - Konstruktorer minskar risken för inkonsekventa objekt.
+
+!!! summary "Sammanfattning"
+    - En konstruktor anropas automatiskt när ett objekt skapas.
+    - Den används för att ge objektet **startvärden** direkt vid skapandet.
+    - Konstruktorer minskar risken för inkonsekventa objekt.
+
+
+
+---
+
 
 ## Standardvärden och felkontroll
 En konstruktor kan också användas för att **förhindra ogiltiga värden** genom att sätta standardvärden.
@@ -157,12 +167,12 @@ class Bil
 ```
 
 
-
 ---
+
 
 ## Konstruktoröverlagring
 
-C# tillåter **överlagrade konstruktörer**, vilket innebär att en klass kan ha flera olika konstruktörer med olika parametrar. Detta gör det möjligt att skapa objekt på olika sätt beroende på vad som är känt vid skapandet.
+C# tillåter **överlagrade konstruktörer**, vilket innebär att en klass kan ha flera olika konstruktorer med olika parametrar. Detta gör det möjligt att skapa objekt på olika sätt beroende på vad som är känt vid skapandet.
 
 ```csharp
 class Bil
@@ -208,7 +218,7 @@ class Program
 
 ---
 
-## `this` och kedjade konstrukt0rer
+## `this` och kedjade konstruktorer
 Nyckelordet **`this`** används inom en klass för att referera till klassens egna medlemmar. Det används också för att **anropa en annan konstruktor** inom samma klass.
 
 ```csharp
@@ -233,12 +243,10 @@ class Bil
 ```
 
 
-> [!summary] **Sammanfattning**
-> - `this` används för att referera till klassens egna variabler.
-> - `this()` kan anropa en annan konstruktor i samma klass, vilket minskar koddupplikation.
 
 ---
-<hr>
+
+
 ## Statiska medlemmar i klasser
 
 Ibland vill man att en variabel eller metod inte ska tillhöra ett specifikt objekt, utan **klassen i sig**. Då används nyckelordet `static`. Ett exempel är en räknare som håller koll på hur många objekt som har skapats.
@@ -278,7 +286,7 @@ Eftersom `antalBilar` är statisk (`static`), delas värdet mellan alla instanse
 
 ---
 
-### Statiska klasser för globala inställningar
+## Statiska klasser för globala inställningar
 I större projekt används ofta **statiska klasser** för att lagra globala inställningar eller gemensamma funktioner. Exempelvis kan en klass innehålla konstanter eller metoder som används överallt i programmet utan att behöva skapa ett objekt.
 
 En klass behöver **inte** vara statisk för att ha statiska medlemmar. Om en klass är `static`, går det inte att skapa objekt av den, vilket gör den användbar för globala inställningar och hjälpfunktioner.
@@ -300,18 +308,19 @@ class Program
 
 Eftersom klassen är `static`, kan dess medlemmar användas globalt utan att skapa en instans.
 
-> [!tip] **Exempel från .NET**
-> En av de mest använda statiska klasserna i .NET är `Math`.
-> Exempel:
-> ```csharp
-> double rot = Math.Sqrt(16); // Returnerar 4
-> double pi = Math.PI; // Konstanten π
-> ```
+!!! tip "Exempel från .NET"
+    En av de mest använda statiska klasserna i .NET är `Math`.
+    Exempel:
+    ```csharp
+    double rot = Math.Sqrt(16); // Returnerar 4
+    double pi = Math.PI; // Konstanten π
+    ```
 
 
-> [!summary] **Sammanfattning**
-> - `static` gör att en variabel eller metod tillhör **klassen istället för enskilda objekt**.
-> - Statisk data delas mellan alla instanser.
-> - Statiska metoder kan anropas direkt på klassen, utan att skapa ett objekt.
+!!! summary "Sammanfattning"
+    - `static` gör att en variabel eller metod tillhör **klassen istället för enskilda objekt**.
+    - Statisk data delas mellan alla instanser.
+    - Statiska metoder kan anropas direkt på klassen, utan att skapa ett objekt.
+
 
 ---

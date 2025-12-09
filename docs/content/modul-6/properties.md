@@ -18,7 +18,10 @@ class Bil
     public int Hastighet 
     {
         // När värdet från fältet "hastighet" ska hämtas och sen användas till något.
-        get { return hastighet; }
+        get 
+        { 
+            return hastighet; 
+        }
 
         // När annan del av programmet försöker ändra värdet i "hastighet".
         set 
@@ -42,7 +45,7 @@ Det finns fördelar med properties, exempelvis:
 - **Inkapsling och kontroll** – ser till att värden alltid sätts och hämtas enligt de regler vi definierat.
 - **Inbyggd validering** – istället för att skapa en separat metod för att validera data, kan det göras direkt i `set`-blocket.
 
-!!! tip "Tips"
+!!! warning "Erkännande"
     Ja, jag förstår att att det inte är mer läsbart första gången man ser det... 
 
 

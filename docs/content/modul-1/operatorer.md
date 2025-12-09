@@ -180,6 +180,7 @@ Inom programmering fungerar prioriteringsordning ganska likt matematiken, olika 
 Lite förenklat kan prioriteringsordningen sägas vara:
 #### 1. Räknesätt
 Räknesätten har också en inbördes prioriteringsordning precis som i matematiken.
+
 1. Postfix ++ och --
 2. Prefix ++ och --, även andra unitära operatorer såsom - och !
 3. Multiplikation, Division och Modulus
