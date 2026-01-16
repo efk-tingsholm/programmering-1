@@ -32,6 +32,8 @@ Ej uppdaterade från pdf.
 
 [Lämna in projekt i classroom](content/guides/Guide%20Lämna%20in%20VS.pdf){:target="_blank"}
 
+[temp](content/include/v0.md)
+
 ## Tips
 
 ## Frågor
