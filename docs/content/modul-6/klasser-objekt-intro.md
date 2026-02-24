@@ -7,6 +7,7 @@ En **klass** är en mall för att skapa objekt. Den definierar vilka egenskaper 
 En klass kan liknas vid en ritning för något – exempelvis en bil. Ritningen beskriver att en bil har en färg, en motor och kan köra. Men själva bilarna existerar inte förrän de skapas baserat på ritningen.
 
 Ett **objekt** är en faktisk instans av en klass.
+
 - En klass definierar hur något ska fungera, medan objekten är de konkreta exemplaren av den klassen.
 - Om klassen är en ritning för en bil, så är varje objekt en faktisk bil med sina egna egenskaper, t.ex. en röd bil och en blå bil.
 
