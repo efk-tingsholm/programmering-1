@@ -10,7 +10,7 @@ Modul 7 har ej uppdaterats från pdf. Alltså tittar man på pdf-arna.
 
 [2. Storlek och rotation](monoguide-24/2%20Position,%20storlek%20och%20rotation.pdf){:target="_blank"}
 
-[3. Rörelse](monoguide-24/3%20Rörelse.pdf.pdf){:target="_blank"}
+[3. Rörelse](monoguide-24/3%20Rörelse.pdf){:target="_blank"}
 
 [4. Tangentbord och mus](monoguide-24/4%20Inmatning.pdf){:target="_blank"}
 
